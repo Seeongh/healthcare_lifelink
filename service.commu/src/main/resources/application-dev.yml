@@ -1,0 +1,44 @@
+server:
+  port: 8084
+  
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+#    url: jdbc:postgresql://112.220.79.218:45432/mzhc_db?currentSchema=healthcare&characterEncoding=UTF-8&serverTimezone
+#    username: mzta
+#    password: mzta
+#    url: jdbc:postgresql://192.168.123.45:5432/mzhc_db?currentSchema=healthcare&characterEncoding=UTF-8&serverTimezone
+#    username: mzhc
+#    password: mzhc
+  application:
+    name: service.usermanagement
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+
+tomcat:    
+    additional-tld-skip-patterns: "*.jar"
+    
+logging:
+  config: classpath:log4j2-spring.xml
+
+#eureka:
+#  client:
+#    register-with-eureka: true
+#    fetch-registry: true
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka
+#
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: refresh, health, beans, bus-refresh
+#logging:
+#  config: classpath:log4j2-local.xml
+#  level:
+#    org.apache.http: DEBUG
+#    httpclient.wire: DEBUG
