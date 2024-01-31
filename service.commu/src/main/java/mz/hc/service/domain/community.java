@@ -1,4 +1,4 @@
-package mz.hc.servcie.domain;
+package mz.hc.service.domain;
 
 import lombok.Getter;
 
@@ -10,10 +10,10 @@ import java.util.Date;
 
 @Entity
 @Getter
-public class community {
+public class Community {
 
     @Id @GeneratedValue
-    @Column(name = "commuId")
+    @Column(name = "communityId")
     private Long commuId;
 
     private String userNm;
@@ -23,5 +23,5 @@ public class community {
     private Date regDate;
 
     //내장타입
-    private diseaseCategory category;
+    private DiseaseCategory category;
 }

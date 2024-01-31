@@ -2,22 +2,36 @@ server:
   port: 8084
   
 
+#spring:
+#  datasource:
+#    driver-class-name: org.postgresql.Driver
+#  application:
+#    name: service.usermanagement
+#  rabbitmq:
+#    host: 127.0.0.1
+#    port: 5672
+#    username: guest
+#    password: guest
+
+#JPA TEST를 위한 설정
 spring:
+  h2:
+    console:
+      enabled: true
+      settings:
+        web_allow_others: true
+      path: /h2-console
   datasource:
-    driver-class-name: org.postgresql.Driver
-#    url: jdbc:postgresql://112.220.79.218:45432/mzhc_db?currentSchema=healthcare&characterEncoding=UTF-8&serverTimezone
-#    username: mzta
-#    password: mzta
-#    url: jdbc:postgresql://192.168.123.45:5432/mzhc_db?currentSchema=healthcare&characterEncoding=UTF-8&serverTimezone
-#    username: mzhc
-#    password: mzhc
-  application:
-    name: service.usermanagement
-  rabbitmq:
-    host: 127.0.0.1
-    port: 5672
-    username: guest
-    password: guest
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:testdb
+  jpa:
+    hibernate:
+      ddl-auto: create #app실행시점에 테이블 지우고 다시 생성
+    properties:
+      hibernate:
+        #show_sql: true #System.out.pringln으로 찍음
+        format_sql: true
+
 
 tomcat:    
     additional-tld-skip-patterns: "*.jar"
