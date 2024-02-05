@@ -5,6 +5,7 @@ import mz.hc.service.domain.Community;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
+import javax.persistence.PersistenceException;
 
 @Repository
 @RequiredArgsConstructor
@@ -16,8 +17,23 @@ public class CommunityRepository {
      * 커뮤니티 보드 글쓰기
      * @param community
      */
-    public void writeBoard(Community community) {
-        em.persist(community);
+    public int writeBoard(Community community) {
+        try {
+            em.getTransaction().begin();
+            em.persist(community);
+            em.getTransaction().commit();
+            return 1;
+        }
+        catch(PersistenceException e) {
+            // 실패
+            e.printStackTrace();
+            return 0;
+        }
+    }
+
+    public Community findBoard(Long id) {
+        Community community = em.find(Community.class, id);
+        return community;
     }
 
 }

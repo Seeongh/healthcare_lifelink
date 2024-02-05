@@ -36,4 +36,10 @@ public class CommunityController {
             return ApiResponse.error(ApiResultCode.INSERT_FAIL);
         }
     }
+
+    @PostMapping("findBoard")
+    public ResponseEntity<ApiResponse> findBoard(Long id) {
+        return ApiResponse.ok(communityService.findBoard(id));
+
+    }
 }

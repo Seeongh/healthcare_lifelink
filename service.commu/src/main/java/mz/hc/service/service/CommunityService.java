@@ -4,4 +4,6 @@ import mz.hc.service.domain.Community;
 
 public interface CommunityService {
     public int writeBoard(Community community);
+
+    public Community findBoard(Long id) ;
 }

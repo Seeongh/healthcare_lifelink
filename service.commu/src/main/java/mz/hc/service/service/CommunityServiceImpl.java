@@ -3,6 +3,7 @@ package mz.hc.service.service;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import mz.hc.service.domain.Community;
 import mz.hc.service.repository.CommunityRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -15,7 +16,13 @@ public class CommunityServiceImpl implements CommunityService{
     @Autowired
     CommunityRepository communityRepository;
 
-    public int writeBoard(Community community) throws Exception {
+    @Override
+    public int writeBoard(Community community) {
         return communityRepository.writeBoard(community);
+    }
+
+    @Override
+    public Community findBoard(Long id) {
+        return communityRepository.findBoard(id);
     }
 }
