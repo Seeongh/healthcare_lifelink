@@ -8,6 +8,8 @@ import mz.hc.service.repository.CommunityRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Slf4j
 @Service
 @RequiredArgsConstructor
@@ -24,5 +26,10 @@ public class CommunityServiceImpl implements CommunityService{
     @Override
     public Community findBoard(Long id) {
         return communityRepository.findBoard(id);
+    }
+
+    @Override
+    public List<Community> findBoardList() {
+        return communityRepository.findBoardList(id);
     }
 }

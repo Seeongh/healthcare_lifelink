@@ -6,6 +6,7 @@ import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceException;
+import java.util.List;
 
 @Repository
 @RequiredArgsConstructor
@@ -34,6 +35,11 @@ public class CommunityRepository {
     public Community findBoard(Long id) {
         Community community = em.find(Community.class, id);
         return community;
+    }
+
+    public List<Community> findBoardList() {
+        return em.createQuery("select i from Community c", Community.class)
+                .getResultList();
     }
 
 }
