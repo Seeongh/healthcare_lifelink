@@ -6,7 +6,7 @@ import org.hibernate.annotations.CreationTimestamp;
 import javax.persistence.*;
 import java.util.Date;
 
-@Entity //
+@Entity
 @Getter
 @Table(name = "community")
 public class Community {
@@ -15,12 +15,10 @@ public class Community {
     @Column(name = "communityId")
     private Long commuId;
 
-    private String userNm;
-
     @Column(length = 100000000)
     @Lob //대용량 데이터
     private String content;
-    
+
     private Date regDate;
 
     //내장타입
