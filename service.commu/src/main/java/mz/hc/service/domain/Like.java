@@ -1,8 +1,11 @@
 package mz.hc.service.domain;
 
+import lombok.Data;
+
 import javax.persistence.*;
 
 @Entity
+@Data
 public class Like {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
