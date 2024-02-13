@@ -19,7 +19,6 @@ public class Recommend {
     @Column(name = "user_id")
     @ManyToOne
     Long userId;
-    int recommendCnt;
 
 }
 

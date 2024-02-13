@@ -6,12 +6,12 @@ import org.hibernate.annotations.CreationTimestamp;
 import javax.persistence.*;
 import java.util.Date;
 
-@Entity
+@Entity //이클래스를 테이블과 매핑
 @Getter
-@Table(name = "community")
+@Table(name = "health_community")
 public class Community {
 
-    @Id @GeneratedValue
+    @Id @GeneratedValue //기본키에 매핑
     @Column(name = "communityId")
     private Long commuId;
 

@@ -19,5 +19,4 @@ public class Like {
     @ManyToOne
     Long userId;
 
-    int likeCnt;
 }
