@@ -12,11 +12,11 @@ public class Recommend {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long RecommendId;
 
-    @Column(name = "commu_id")
+    @Column(name = "communityId")
     @ManyToOne
     Long commuId; //1:1 관계
 
-    @Column(name = "user_id")
+    @Column(name = "userId")
     @ManyToOne
     Long userId;
 
