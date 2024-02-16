@@ -11,11 +11,11 @@ public class Like {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long likeId;
 
-    @Column(name = "communityId")
+    @Column(name = "community_id")
     @ManyToOne
     Long commuId; //1:1 관계
 
-    @Column(name = "userId")
+    @Column(name = "user_id")
     @ManyToOne
     Long userId;
 
