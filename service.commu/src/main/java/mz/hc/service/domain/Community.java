@@ -1,12 +1,13 @@
 package mz.hc.service.domain;
 
 import lombok.Getter;
+import lombok.Setter;
 
 import javax.persistence.*;
 import java.util.Date;
 
 @Entity //이클래스를 테이블과 매핑
-@Getter
+@Getter @Setter
 @Table(name = "health_community")
 public class Community {
 
