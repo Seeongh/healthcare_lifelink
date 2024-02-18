@@ -12,7 +12,7 @@ import java.util.Date;
 public class Community {
 
     @Id @GeneratedValue //기본키에 매핑, @Access (AccessType.FIELD) 생략됨
-    @Column(name = "communityId")
+    @Column(name = "community_id")
     private Long commuId;
 
     @Column(length = 100000000)
@@ -28,8 +28,8 @@ public class Community {
     private DiseaseCategory category;
 
     @ManyToOne
-    @JoinColumn(name="userId") //실제디비엔 user_id 칼럼명으로 들어감
-    private User user;
+    @JoinColumn(name="user_seq") //실제디비엔 user_seq 칼럼명으로 들어감
+    private Long userSeq;
     // DB는 오브젝트를 저장 할 수 없다.FK는 자바는 오브젝트를 저장할 수 없다.
 
 }
