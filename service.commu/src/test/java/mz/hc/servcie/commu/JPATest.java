@@ -1,13 +1,11 @@
 package mz.hc.servcie.commu;
 
 import mz.hc.service.domain.Community;
-import mz.hc.service.domain.User;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import javax.persistence.EntityManager;
-import java.beans.Transient;
 
 @SpringBootTest
 public class JPATest {

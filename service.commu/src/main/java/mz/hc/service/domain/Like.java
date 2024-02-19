@@ -12,11 +12,11 @@ public class Like {
     Long likeId;
 
     @Column(name = "community_id")
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     Long commuId; //1:1 관계
 
-    @Column(name = "user_id")
+    @Column(name = "user_seq")
     @ManyToOne
-    Long userId;
+    Long userSeq;
 
 }
