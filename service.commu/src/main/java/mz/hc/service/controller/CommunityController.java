@@ -1,14 +1,12 @@
 package mz.hc.service.controller;
 
 import lombok.extern.slf4j.Slf4j;
-import mz.hc.service.domain.Community;
+import mz.hc.service.commu.domain.Community;
 import mz.hc.service.domain.dto.ApiResponse;
 import mz.hc.service.domain.dto.ApiResultCode;
 import mz.hc.service.service.CommunityService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.env.Environment;
 import org.springframework.http.ResponseEntity;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

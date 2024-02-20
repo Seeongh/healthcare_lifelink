@@ -1,6 +1,6 @@
 package mz.hc.service.service;
 
-import mz.hc.service.domain.Community;
+import mz.hc.service.commu.domain.Community;
 
 import java.util.List;
 

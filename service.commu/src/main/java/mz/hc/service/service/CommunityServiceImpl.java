@@ -3,7 +3,7 @@ package mz.hc.service.service;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import mz.hc.service.domain.Community;
+import mz.hc.service.commu.domain.Community;
 import mz.hc.service.repository.CommunityRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

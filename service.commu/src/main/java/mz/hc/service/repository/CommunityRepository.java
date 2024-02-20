@@ -1,7 +1,7 @@
 package mz.hc.service.repository;
 
 import lombok.RequiredArgsConstructor;
-import mz.hc.service.domain.Community;
+import mz.hc.service.commu.domain.Community;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;

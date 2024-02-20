@@ -1,6 +1,6 @@
 package mz.hc.servcie.commu;
 
-import mz.hc.service.domain.Community;
+import mz.hc.service.commu.domain.Community;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -19,9 +19,9 @@ public class JPATest {
         em.clear();
 
         Community commu = new Community();
-        User user = new User();
-        user.setUserNm("ash");
-        commu.setUser(user);
+        //User user = new User();
+        //user.setUserNm("ash");
+        //commu.setUser(user);
         commu.setContent("This is test board");
 
         //when

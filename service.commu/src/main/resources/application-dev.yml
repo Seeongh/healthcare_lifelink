@@ -1,19 +1,6 @@
 server:
-  port: 8084
-  
+  port: 8085
 
-#spring:
-#  datasource:
-#    driver-class-name: org.postgresql.Driver
-#  application:
-#    name: service.usermanagement
-#  rabbitmq:
-#    host: 127.0.0.1
-#    port: 5672
-#    username: guest
-#    password: guest
-
-#JPA TEST를 위한 설정
 spring:
   h2:
     console:
@@ -29,15 +16,16 @@ spring:
       ddl-auto: create #app실행시점에 테이블 지우고 다시 생성, 종료시 지움
     properties:
       hibernate:
-        #show_sql: true #System.out.pringln으로 찍음
+        show_sql: true #System.out.pringln으로 찍음
         format_sql: true
-
-
 tomcat:    
     additional-tld-skip-patterns: "*.jar"
     
 logging:
   config: classpath:log4j2-spring.xml
+  level:
+    org.hibernate.SQL: debug
+    org.hibernate.type: trace
 
 #eureka:
 #  client:
@@ -56,3 +44,17 @@ logging:
 #  level:
 #    org.apache.http: DEBUG
 #    httpclient.wire: DEBUG
+
+
+#spring:
+#  datasource:
+#    driver-class-name: org.postgresql.Driver
+#  application:
+#    name: service.usermanagement
+#  rabbitmq:
+#    host: 127.0.0.1
+#    port: 5672
+#    username: guest
+#    password: guest
+
+#JPA TEST를 위한 설정
