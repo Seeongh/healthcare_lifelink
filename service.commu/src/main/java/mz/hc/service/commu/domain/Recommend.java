@@ -18,7 +18,7 @@ public class Recommend {
 
     @JoinColumn(name = "user_seq")
     @ManyToOne
-    User user;
+    Usermng user;
 
 }
 

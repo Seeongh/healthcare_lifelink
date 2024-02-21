@@ -29,7 +29,7 @@ public class Community {
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name="user_seq") //실제디비엔 user_seq 칼럼명으로 들어감
-    private User user;
+    private Usermng user;
     // DB는 오브젝트를 저장 할 수 없다.FK는 자바는 오브젝트를 저장할 수 없다.
 
 }
