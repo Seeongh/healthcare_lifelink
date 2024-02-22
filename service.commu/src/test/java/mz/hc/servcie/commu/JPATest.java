@@ -36,4 +36,27 @@ public class JPATest {
         //then
 
      }
+
+     @Test
+     public void 게시판수정() throws Exception {
+         //given
+         Community commu = new Community();
+         Usermng user = new Usermng("1", "ASH");
+         //user.setUserNm("ash");
+         //commu.setUser(user);
+         commu.setContent("This is test board");
+
+         communityService.writeBoard(commu);
+
+         em.flush();
+
+         Community board = communityService.findBoard(1L);
+
+         //when
+
+         board.setContent("This is update board");
+
+         //then
+
+      }
 }
