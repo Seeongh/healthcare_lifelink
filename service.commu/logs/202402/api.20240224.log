@@ -1,0 +1,127 @@
+2024-02-24 00:00:22,223 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool(logPoolState:421) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-24 00:00:22,231 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool(fillPool:518) - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2024-02-24 00:00:52,239 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool(logPoolState:421) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-24 00:00:52,239 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool(fillPool:518) - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2024-02-24 00:01:22,240 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool(logPoolState:421) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-24 00:01:22,242 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool(fillPool:518) - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2024-02-24 00:01:52,243 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool(logPoolState:421) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-24 00:01:52,243 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool(fillPool:518) - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2024-02-24 00:02:22,250 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool(logPoolState:421) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-24 00:02:22,250 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool(fillPool:518) - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2024-02-24 00:02:52,256 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool(logPoolState:421) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-24 00:02:52,256 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool(fillPool:518) - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2024-02-24 00:03:22,273 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool(logPoolState:421) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-24 00:03:22,273 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool(fillPool:518) - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2024-02-24 00:03:52,286 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool(logPoolState:421) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-24 00:03:52,286 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool(fillPool:518) - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2024-02-24 00:04:22,293 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool(logPoolState:421) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-24 00:04:22,293 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool(fillPool:518) - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2024-02-24 00:04:52,307 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool(logPoolState:421) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-24 00:04:52,307 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool(fillPool:518) - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2024-02-24 00:05:22,309 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool(logPoolState:421) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-24 00:05:22,309 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool(fillPool:518) - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2024-02-24 00:05:52,311 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool(logPoolState:421) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-24 00:05:52,311 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool(fillPool:518) - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2024-02-24 00:06:22,327 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool(logPoolState:421) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-24 00:06:22,327 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool(fillPool:518) - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2024-02-24 00:06:52,330 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool(logPoolState:421) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-24 00:06:52,330 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool(fillPool:518) - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2024-02-24 00:07:12,557 [SpringApplicationShutdownHook] DEBUG org.springframework.boot.availability.ApplicationAvailabilityBean(onApplicationEvent:77) - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2024-02-24 00:07:12,558 [SpringApplicationShutdownHook] DEBUG org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext(doClose:1049) - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@413d6530, started on Fri Feb 23 23:23:17 KST 2024
+2024-02-24 00:07:12,570 [SpringApplicationShutdownHook] DEBUG org.springframework.context.support.DefaultLifecycleProcessor(stop:365) - Stopping beans in phase 2147483647
+2024-02-24 00:07:12,574 [SpringApplicationShutdownHook] DEBUG org.springframework.context.support.DefaultLifecycleProcessor(lambda$doStop$3:238) - Bean 'webServerGracefulShutdown' completed its stop procedure
+2024-02-24 00:07:12,574 [SpringApplicationShutdownHook] DEBUG org.springframework.context.support.DefaultLifecycleProcessor(stop:365) - Stopping beans in phase 2147483646
+2024-02-24 00:07:12,733 [SpringApplicationShutdownHook] DEBUG org.springframework.context.support.DefaultLifecycleProcessor(lambda$doStop$3:238) - Bean 'webServerStartStop' completed its stop procedure
+2024-02-24 00:07:12,733 [SpringApplicationShutdownHook] DEBUG org.springframework.context.support.DefaultLifecycleProcessor(stop:365) - Stopping beans in phase -2147483647
+2024-02-24 00:07:12,734 [SpringApplicationShutdownHook] DEBUG org.springframework.context.support.DefaultLifecycleProcessor(lambda$doStop$3:238) - Bean 'springBootLoggingLifecycle' completed its stop procedure
+2024-02-24 00:07:12,739 [SpringApplicationShutdownHook] DEBUG org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(shutdown:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-02-24 00:07:12,739 [SpringApplicationShutdownHook] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(destroy:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-24 00:07:12,741 [SpringApplicationShutdownHook] DEBUG org.hibernate.internal.SessionFactoryImpl(close:821) - HHH000031: Closing
+2024-02-24 00:07:12,743 [SpringApplicationShutdownHook] TRACE org.hibernate.type.spi.TypeConfiguration$Scope(sessionFactoryClosed:208) - Handling #sessionFactoryClosed from [org.hibernate.internal.SessionFactoryImpl@218cf5b4] for TypeConfiguration
+2024-02-24 00:07:12,744 [SpringApplicationShutdownHook] DEBUG org.hibernate.type.spi.TypeConfiguration$Scope(unsetSessionFactory:345) - Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@531bbb6e] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@218cf5b4]
+2024-02-24 00:07:12,745 [SpringApplicationShutdownHook] DEBUG org.hibernate.service.internal.AbstractServiceRegistryImpl(deRegisterChild:419) - Implicitly destroying ServiceRegistry on de-registration of all child ServiceRegistries
+2024-02-24 00:07:12,749 [SpringApplicationShutdownHook] DEBUG org.hibernate.boot.registry.internal.BootstrapServiceRegistryImpl(deRegisterChild:295) - Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries
+2024-02-24 00:07:12,754 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase(quietlyCloseConnection:134) - HikariPool-1 - Closing connection conn11: url=jdbc:h2:mem:testdb user=SA: (connection is dead)
+2024-02-24 00:07:12,755 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase(quietlyCloseConnection:134) - HikariPool-1 - Closing connection conn12: url=jdbc:h2:mem:testdb user=SA: (connection is dead)
+2024-02-24 00:07:12,755 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.HikariPool(fillPool:518) - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2024-02-24 00:07:12,757 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase(quietlyCloseConnection:134) - HikariPool-1 - Closing connection conn13: url=jdbc:h2:mem:testdb user=SA: (connection is dead)
+2024-02-24 00:07:12,757 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.HikariPool(fillPool:518) - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2024-02-24 00:07:12,757 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase(quietlyCloseConnection:134) - HikariPool-1 - Closing connection conn14: url=jdbc:h2:mem:testdb user=SA: (connection is dead)
+2024-02-24 00:07:12,757 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.HikariPool(fillPool:518) - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2024-02-24 00:07:12,757 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase(quietlyCloseConnection:134) - HikariPool-1 - Closing connection conn15: url=jdbc:h2:mem:testdb user=SA: (connection is dead)
+2024-02-24 00:07:12,757 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.HikariPool(fillPool:518) - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2024-02-24 00:07:12,757 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase(quietlyCloseConnection:134) - HikariPool-1 - Closing connection conn16: url=jdbc:h2:mem:testdb user=SA: (connection is dead)
+2024-02-24 00:07:12,758 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.HikariPool(fillPool:518) - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2024-02-24 00:07:12,758 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase(quietlyCloseConnection:134) - HikariPool-1 - Closing connection conn17: url=jdbc:h2:mem:testdb user=SA: (connection is dead)
+2024-02-24 00:07:12,758 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.HikariPool(fillPool:518) - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2024-02-24 00:07:12,758 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase(quietlyCloseConnection:134) - HikariPool-1 - Closing connection conn18: url=jdbc:h2:mem:testdb user=SA: (connection is dead)
+2024-02-24 00:07:12,758 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.HikariPool(fillPool:518) - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2024-02-24 00:07:12,759 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase(quietlyCloseConnection:134) - HikariPool-1 - Closing connection conn19: url=jdbc:h2:mem:testdb user=SA: (connection is dead)
+2024-02-24 00:07:12,759 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.HikariPool(fillPool:518) - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2024-02-24 00:07:12,759 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase(quietlyCloseConnection:134) - HikariPool-1 - Closing connection conn20: url=jdbc:h2:mem:testdb user=SA: (connection is dead)
+2024-02-24 00:07:12,759 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.HikariPool(fillPool:518) - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2024-02-24 00:07:12,769 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool(call:729) - HikariPool-1 - Added connection conn21: url=jdbc:h2:mem:testdb user=SA
+2024-02-24 00:07:12,770 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool(call:729) - HikariPool-1 - Added connection conn22: url=jdbc:h2:mem:testdb user=SA
+2024-02-24 00:07:12,773 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.PoolBase(newConnection:378) - HikariPool-1 - Failed to create/setup connection: The database is open in exclusive mode; can not open additional connections [90135-214]
+2024-02-24 00:07:12,773 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool(createPoolEntry:504) - HikariPool-1 - Cannot acquire connection from data source
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: The database is open in exclusive mode; can not open additional connections [90135-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:678) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.get(DbException.java:223) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.get(DbException.java:199) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.get(DbException.java:188) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.Database.createSession(Database.java:1039) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.Engine.openSession(Engine.java:163) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.Engine.openSession(Engine.java:222) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.Engine.createSession(Engine.java:201) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.Driver.connect(Driver.java:59) ~[h2-2.1.214.jar:2.1.214]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712) ~[HikariCP-4.0.3.jar:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[?:?]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+2024-02-24 00:07:12,978 [SpringApplicationShutdownHook] INFO  p6spy(logSQL:60) - #1708700832976 | took 206ms | statement | connection 5| url jdbc:h2:mem:testdb
+SHUTDOWN
+SHUTDOWN;
+2024-02-24 00:07:12,978 [SpringApplicationShutdownHook] WARN  org.springframework.beans.factory.support.DisposableBeanAdapter(destroy:219) - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor'
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:678) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.get(DbException.java:223) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.get(DbException.java:199) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.get(DbException.java:188) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.jdbc.JdbcConnection.checkClosed(JdbcConnection.java:1375) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.jdbc.JdbcConnection.clearWarnings(JdbcConnection.java:610) ~[h2-2.1.214.jar:2.1.214]
+	at com.zaxxer.hikari.pool.ProxyConnection.close(ProxyConnection.java:267) ~[HikariCP-4.0.3.jar:?]
+	at com.p6spy.engine.wrapper.ConnectionWrapper.close(ConnectionWrapper.java:225) ~[p6spy-3.8.2.jar:?]
+	at org.springframework.boot.devtools.autoconfigure.DevToolsDataSourceAutoConfiguration$NonEmbeddedInMemoryDatabaseShutdownExecutor$InMemoryDatabase.lambda$new$1(DevToolsDataSourceAutoConfiguration.java:140) ~[spring-boot-devtools-2.7.7.jar:2.7.7]
+	at org.springframework.boot.devtools.autoconfigure.DevToolsDataSourceAutoConfiguration$NonEmbeddedInMemoryDatabaseShutdownExecutor$InMemoryDatabase.shutdown(DevToolsDataSourceAutoConfiguration.java:157) ~[spring-boot-devtools-2.7.7.jar:2.7.7]
+	at org.springframework.boot.devtools.autoconfigure.DevToolsDataSourceAutoConfiguration$NonEmbeddedInMemoryDatabaseShutdownExecutor.destroy(DevToolsDataSourceAutoConfiguration.java:103) ~[spring-boot-devtools-2.7.7.jar:2.7.7]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:213) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1163) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1156) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1106) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1075) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:174) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1021) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:145) ~[spring-boot-2.7.7.jar:2.7.7]
+	at java.lang.Iterable.forEach(Iterable.java:75) ~[?:?]
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:114) ~[spring-boot-2.7.7.jar:2.7.7]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+2024-02-24 00:07:12,980 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource(close:350) - HikariPool-1 - Shutdown initiated...
+2024-02-24 00:07:12,980 [SpringApplicationShutdownHook] DEBUG com.zaxxer.hikari.pool.HikariPool(logPoolState:421) - HikariPool-1 - Before shutdown stats (total=2, active=0, idle=2, waiting=0)
+2024-02-24 00:07:12,981 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase(quietlyCloseConnection:134) - HikariPool-1 - Closing connection conn21: url=jdbc:h2:mem:testdb user=SA: (connection evicted)
+2024-02-24 00:07:12,981 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase(quietlyCloseConnection:134) - HikariPool-1 - Closing connection conn22: url=jdbc:h2:mem:testdb user=SA: (connection evicted)
+2024-02-24 00:07:13,039 [SpringApplicationShutdownHook] DEBUG com.zaxxer.hikari.pool.HikariPool(logPoolState:421) - HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+2024-02-24 00:07:13,040 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource(close:352) - HikariPool-1 - Shutdown completed.
