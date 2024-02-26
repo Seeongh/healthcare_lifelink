@@ -50,7 +50,7 @@ public class CommunityController {
      * community 게시글 전체 보기
      * @return
      */
-    @GetMapping("findBoardlist")
+    @PostMapping("findBoardlist")
     public ResponseEntity<ApiResponse> findBoardList() {
 
         List<Community> items = communityService.findBoardList();

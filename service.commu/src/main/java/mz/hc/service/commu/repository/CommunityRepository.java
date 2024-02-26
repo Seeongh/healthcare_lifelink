@@ -3,6 +3,7 @@ package mz.hc.service.commu.repository;
 import lombok.RequiredArgsConstructor;
 import mz.hc.service.commu.domain.Community;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -10,11 +11,10 @@ import javax.persistence.PersistenceException;
 import java.util.List;
 
 @Repository
-@RequiredArgsConstructor
 public class CommunityRepository {
 
-    @PersistenceContext
-    private final EntityManager em;
+    @PersistenceContext //SPRINGDL ENtitymanager만들어서 주입해줌 @AutoWired로 변경가능-> REquiredArgsConstruct로 변경가능
+    private EntityManager em;
 
     /**
      * 커뮤니티 보드 글쓰기
@@ -38,7 +38,7 @@ public class CommunityRepository {
     }
 
     public List<Community> findBoardList() {
-        return em.createQuery("select i from Community c", Community.class)
+        return em.createQuery("select c from health_community c", Community.class)
                 .getResultList();
     }
 
