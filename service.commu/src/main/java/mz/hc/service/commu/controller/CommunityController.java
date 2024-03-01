@@ -26,6 +26,7 @@ public class CommunityController {
 
     @PostMapping("writeBoard")
     public ResponseEntity<ApiResponse> writeBoard(@RequestBody Community community) {
+        log.info("ash param "+ community.toString());
         int result = communityService.writeBoard(community);
         if(result == 1) {
 
@@ -61,7 +62,7 @@ public class CommunityController {
     public ResponseEntity<ApiResponse> updateBoard(@ModelAttribute Community community ) {
         Community updatedCommu = communityService.findBoard(community.getCommuId());
         updatedCommu.setContent(community.getContent());
-        updatedCommu.setCategory(community.getCategory());
+        //updatedCommu.setCategory(community.getCategory());
         communityService.writeBoard(updatedCommu);
 
         return ApiResponse.ok(community);
