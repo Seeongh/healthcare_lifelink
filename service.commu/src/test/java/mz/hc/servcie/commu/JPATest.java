@@ -8,9 +8,9 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
-import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
+import java.util.List;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -59,4 +59,20 @@ public class JPATest {
          //then
 
       }
+
+      @Test
+      public void 불러오기() throws Exception {
+          //given
+          Community commu = new Community();
+          commu.setContent("비밀입니다");
+          commu.setAge("50");
+          commu.setBloodpress("105");
+
+          communityService.writeBoard(commu);
+          //when
+          List<Community> List = communityService.findBoardList();
+          //then
+          System.out.println("List = " + List);
+
+       }
 }

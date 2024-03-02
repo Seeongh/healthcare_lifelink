@@ -26,7 +26,6 @@ public class CommunityController {
 
     @PostMapping("writeBoard")
     public ResponseEntity<ApiResponse> writeBoard(@RequestBody Community community) {
-        log.info("ash param "+ community.toString());
         int result = communityService.writeBoard(community);
         if(result == 1) {
 
