@@ -6,14 +6,14 @@ import lombok.Setter;
 import javax.persistence.*;
 import java.util.Date;
 
-@Entity //이클래스를 테이블과 매핑
+@Entity(name = "health_community") //이클래스를 테이블과 매핑
 @Getter @Setter
 @Table(name = "health_community")
 public class Community {
 
     @Id @GeneratedValue //기본키에 매핑, @Access (AccessType.FIELD) 생략됨
-    @Column(name = "community_id")
-    private Long commuId;
+    @Column(name = "community_seq")
+    private int commuSeq;
 
     @Column(length = 100000)
     private String content;
@@ -22,30 +22,36 @@ public class Community {
     private Date regDate;
 
     @Column()
-    private String heartrate;
+    private int heartrate;
 
     @Column()
-    private String temperature;
+    private int temperature;
 
     @Column()
-    private String bloodpress;
+    private int bloodpress;
 
     @Column()
-    private String smoking;
+    private int smoking;
 
     @Column()
-    private String drinking;
+    private int drinking;
 
     @Column()
-    private String exercise;
+    private int exercise;
 
     //내장타입
 
     @Column()
-    private String age;
+    private int age;
 
-    @Column(name = "user_seq")
-    String userSeq;
+    @Column(name = "user_id")
+    int userId;
+
+    @Column
+    String userNm;
+
+    @Column
+    int bodyAge;
 //    @ManyToOne(fetch = FetchType.EAGER)
 //    @JoinColumn(name="user_seq") //실제디비엔 user_seq 칼럼명으로 들어감
 //    private Usermng user;

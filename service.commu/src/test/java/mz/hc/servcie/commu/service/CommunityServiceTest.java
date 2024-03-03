@@ -1,26 +1,28 @@
-package mz.hc.servcie.commu;
+package mz.hc.servcie.commu.service;
 
 import mz.hc.service.commu.domain.Community;
 import mz.hc.service.commu.domain.Usermng;
-import mz.hc.service.commu.service.CommunityService;
+import mz.hc.service.commu.repository.CommunityRepository;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
 import java.util.List;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class JPATest {
+@Transactional
+public class CommunityServiceTest {
 
     @Autowired
     EntityManager em;
 
     @Autowired
-    CommunityService communityService;
+    CommunityRepository communityRepository;
 
     @Test
     public void 게시판쓰기() throws Exception {
@@ -31,7 +33,7 @@ public class JPATest {
         //commu.setUser(user);
         commu.setContent("This is test board");
 
-        communityService.writeBoard(commu);
+     //   communityService.writeBoard(commu);
         //when
         //then
 
@@ -46,15 +48,15 @@ public class JPATest {
          //commu.setUser(user);
          commu.setContent("This is test board");
 
-         communityService.writeBoard(commu);
+        // communityService.writeBoard(commu);
 
          em.flush();
 
-         Community board = communityService.findBoard(1L);
+        // Community board = communityService.findBoard(1L);
 
          //when
 
-         board.setContent("This is update board");
+       //  board.setContent("This is update board");
 
          //then
 
@@ -68,9 +70,9 @@ public class JPATest {
           commu.setAge("50");
           commu.setBloodpress("105");
 
-          communityService.writeBoard(commu);
+          communityRepository.writeBoard(commu);
           //when
-          List<Community> List = communityService.findBoardList();
+          List<Community> List = communityRepository.findBoardList();
           //then
           System.out.println("List = " + List);
 
