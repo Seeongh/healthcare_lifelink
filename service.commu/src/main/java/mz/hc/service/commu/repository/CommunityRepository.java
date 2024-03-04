@@ -10,6 +10,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.PersistenceException;
 import java.util.List;
+import java.util.Map;
 
 @Repository
 public class CommunityRepository {
@@ -38,8 +39,9 @@ public class CommunityRepository {
         return community;
     }
 
-    public List<Community> findBoardList() {
-        return em.createQuery("select h from health_community h", Community.class)
+    public List<Community> findBoardList(Map<String,Object> map) {
+        String jpql = "select c from health_community h where c.age/10 ="+ Integer.parseInt((String) map.get("age"))/10;
+        return em.createQuery(jpql, Community.class)
                 .getResultList();
     }
 

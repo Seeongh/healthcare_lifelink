@@ -10,6 +10,6 @@ public interface CommunityService {
 
     public Community findBoard(int commuSeq) ;
 
-    public List<Community> findBoardList();
+    public List<Community> findBoardList(Map<String,Object> map);
 
 }

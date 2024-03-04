@@ -19,16 +19,17 @@ public class Community {
     private String content;
 
     @Temporal(TemporalType.TIMESTAMP) //날짜 시간
+    @Column(name = "reg_date")
     private Date regDate;
 
     @Column()
     private int heartrate;
 
     @Column()
-    private int temperature;
+    private double temperature;
 
     @Column()
-    private int bloodpress;
+    private double bloodpress;
 
     @Column()
     private int smoking;
@@ -45,12 +46,12 @@ public class Community {
     private int age;
 
     @Column(name = "user_id")
-    int userId;
+    String userId;
 
     @Column
     String userNm;
 
-    @Column
+    @Column(name = "body_age")
     int bodyAge;
 //    @ManyToOne(fetch = FetchType.EAGER)
 //    @JoinColumn(name="user_seq") //실제디비엔 user_seq 칼럼명으로 들어감

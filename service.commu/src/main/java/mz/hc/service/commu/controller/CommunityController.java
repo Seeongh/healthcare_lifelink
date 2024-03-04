@@ -1,5 +1,7 @@
 package mz.hc.service.commu.controller;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import mz.hc.service.commu.domain.Community;
@@ -11,6 +13,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 
 @Slf4j
 @RestController
@@ -25,8 +28,14 @@ public class CommunityController {
      */
 
     @PostMapping("writeBoard")
-    public ResponseEntity<ApiResponse> writeBoard(@RequestBody Community community) {
-        int result = communityService.writeBoard(community);
+    public ResponseEntity<ApiResponse> writeBoard( @RequestBody Map<String,Object> map)   {
+        log.info("ash get param " + map.toString());
+
+        ObjectMapper obj = new ObjectMapper();
+        int result=0;
+        Community community = obj.convertValue(map, Community.class);
+        result = communityService.writeBoard(community);
+
         if(result == 1) {
 
             return ApiResponse.ok();
@@ -51,9 +60,9 @@ public class CommunityController {
      * @return
      */
     @PostMapping("findBoardlist")
-    public ResponseEntity<ApiResponse> findBoardList() {
+    public ResponseEntity<ApiResponse> findBoardList(@RequestBody Map<String,Object> map) {
 
-        List<Community> items = communityService.findBoardList();
+        List<Community> items = communityService.findBoardList(map);
         return ApiResponse.ok(items);
     }
 

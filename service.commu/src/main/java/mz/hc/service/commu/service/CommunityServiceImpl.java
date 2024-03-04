@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+import java.util.Map;
 
 @RequiredArgsConstructor
 @Slf4j
@@ -24,10 +25,10 @@ public class CommunityServiceImpl implements CommunityService{
     private final UserRepository userRepository;
 
     @Override
-    @Transactional(readOnly = false) //읽기전용으로 하면 데이터 변경이 안됨.
+    @Transactional//읽기전용으로 하면 데이터 변경이 안됨.
     public int writeBoard(Community community) {
-        Usermng um = userRepository.findOne(community.getUserId());
-        community.setUserNm(um.getUser_nm());
+//        Usermng um = userRepository.findOne(community.getUserId());
+//        community.setUserNm(um.getUser_nm());
         return communityRepository.writeBoard(community);
     }
 
@@ -38,7 +39,7 @@ public class CommunityServiceImpl implements CommunityService{
 
     @Override
     @Transactional
-    public List<Community> findBoardList() {
-        return communityRepository.findBoardList();
+    public List<Community> findBoardList(Map<String,Object> map) {
+        return communityRepository.findBoardList(map);
     }
 }
