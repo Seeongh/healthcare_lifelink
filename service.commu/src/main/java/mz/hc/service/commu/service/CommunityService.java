@@ -4,6 +4,7 @@ import mz.hc.service.commu.domain.Community;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Map;
 
 public interface CommunityService {
     public int writeBoard(Community community);
