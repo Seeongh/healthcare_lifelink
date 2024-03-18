@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" type="image/png" href="../favicon-32x32.png">
+    <!-- 선호 URL -->
+    <link rel="canonical" href="http://ooo.test.kr">
+    <!-- 페이지 설명 -->
+    <meta name="description" content="미디어젠은...">
+
+    <!-- open graph : 소셜미디어 공유될 때 우선 활용 정보 -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="미디어젠">
+    <meta property="og:description" content="미디어젠은...">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="http://ooo.test.kr">
+
+    <!-- 스타일 -->
+    <link rel="stylesheet" href="../css/popupwindow.css" type="text/css">
+    <link rel="stylesheet" href="../css/popModal.css" type="text/css">
+    <link rel="stylesheet" href="../css/core.css" type="text/css">
+    <link rel="stylesheet" href="../css/main.css" type="text/css">
+    <link rel="stylesheet" href="../css/common.css" type="text/css">
+    <link rel="stylesheet" href="../css/sub.css" type="text/css">
+
+    <link rel="stylesheet" href="../css/bufs_common.css" type="text/css">
+    
+
+    <!-- speech css -->
+    <link rel="stylesheet" href="../css/vender/animations.css">
+    <link rel="stylesheet" href="../css/vender/jquery.mCustomScrollbar.css">
+    <!-- speech css -->
+
+    <!-- speech 추가한 css -->
+    <link rel="stylesheet" href="../css/speech.css">
+    <!-- speech 추가한 css -->
+
+    <!-- 스크립트 -->
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/jquery-1.10.1.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/egovframework/common/common.js"></script>
+    <!--왼쪽 하위메뉴 : 공통 -->
+    <script src="../js/left_nav/navBar.js"></script>
+    <!-- 첨부파일 -->
+    <script src="../js/egovframework/com/cmm/fms/EgovMultiFile.js"></script>
+
+    <!-- 유틸 -->
+    <script src="../js/egovframework/com/cmm/utl/EgovCmmUtl.js"></script>
+    <script src="../js/wavus/comm/wavus-util.js"></script>
+    <script src="../js/biz/common/fn_egov_file.js"></script>
+
+    <script src="../js/swiper.min.js"></script>
+    <!-- loading bar 관련-->
+    <script src="../js/biz/common/loading.js"></script>
+    <!-- popup 관련 -->
+    <script src="../js/popModal.js"></script>
+    <script src="../js/popupwindow.js"></script>
+    <script src="../js/biz/common/popupLoad.js"></script>
+
+    <!-- video.js 예제 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.8.1/video-js.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.8.1/video.min.js"></script>
+    <script src="../js/video.js"></script>
+
+    <!-- speech js -->
+    <script src="../js/vender/common.js"></script>
+    <!-- speech js -->
+
+    <title>데일리 발음 챌린지 녹음 페이지</title>
+</head>
+
+
+<body>
+    <div class="layout_wrap">
+        <div class="header_layout">
+            <div class="header_wrap inner">
+                <a href="" class="main_logo">
+                    <img src="../images/bufs/logo_bufs_main.png" class="main_logo_img" alt="부산외국어센터">
+                </a>
+
+                <nav class="gnb">
+                    <ul class="gnb_list">
+                        <li class="gnb_list__item"><a href="교수_진단평가.html" class="gnb_list__link">진단평가</a></li>
+                        <li class="gnb_list__item"><a href="" class="gnb_list__link">강좌</a></li>
+                        <li class="gnb_list__item"><a href="" class="gnb_list__link">강좌현황</a></li>
+                        <li class="gnb_list__item"><a href="" class="gnb_list__link">시스템관리</a></li>
+                        <li>
+                            <a href="데일리_발음챌린지.html" class="gnb_list__link gnb_list__link--on">데일리 발음 챌린지</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="login_info">
+                    <span class="login_info__txt"><a href="#none" class="login_info__user">홍길동 교수님</a>, 안녕하세요.</span>
+                    <a href="" class="login_info__link">Login</a>
+                    <a href="" class="login_info__link">Logout</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="container_wrap inner">
+                <section class="layout_content">
+                    <h1 class="content_main_title">데일리 발음 챌린지</h1>
+
+                    <!-- 콘텐츠 내용 -->
+                    <div class="content_wrap">
+
+
+
+                        <div id="pt-main" class="pt-perspective">
+                            <!-- 말하기 -->
+                            <div class="pt-page pt-page-2 pt-page-current">
+                                <h3 class="h3_title">오늘의 영어 문장입니다.</h3>
+                                <h3 class="h3_title">잘 듣고 빈칸을 채워 전체 문장을 발음해보세요!</h3>
+                                <h3 class="h3_title">총 3번의 기회를 드립니다.</h3>
+
+                                <div class="relative">
+                                    <button type="button" class="btn_speech_en"></button>
+                                    <div class="txt_speech txt_a">
+                                        <p>스피커를 클릭하면<br>영어문장을 들을 수 있습니다.</p>
+                                    </div>
+                                </div>
+
+                                <p class="en_txt">She completed her literature review. She completed <span class="speech_border"></span> <span class="speech_border speech_border2"></span> <span class="speech_border speech_border3"></span> her literature review.</p>
+
+
+                                <h4 class="h4_title">직접 녹음하여 발음 점수를 확인 할 수 있습니다.</h4>
+                                <div class="sample_speech_box">
+                                    <button type="button" class="btn_speech_direct js-open-pop _visible _none_event" data-target=".target-pop"></button>
+                                    <div class="again_btn_wrap _on">
+                                        <button class="again_btn">재녹음</button>
+                                    </div>
+                                    <button type="button" class="btn_speech_direct js-open-pop" data-target=".target-pop"></button>
+                                    <div class="again_btn_wrap again_btn_wrap02">
+                                        <button class="again_btn">재녹음</button>
+                                    </div>
+                                    <button type="button" class="btn_speech_direct js-open-pop" data-target=".target-pop"></button>
+                                    <div class="again_btn_wrap again_btn_wrap03">
+                                        <button class="again_btn">재녹음</button>
+                                    </div>
+
+
+
+                                    <div class="target-pop">
+                                        <div class="pop_inbox">
+                                            <h1>녹음중<br> 말씀해 주세요.</h1>
+
+                                            <div class="loading_img">
+                                                <img src="../images/vender/common/rec_motion.gif" alt="녹음중">
+                                            </div>
+
+                                            <button type="button" class="btn_close_pop js-pop-close">닫기</button>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- _on클래스 붙이면 보이기 -->
+                                    <div class="txt_speech txt_speech01 _on">
+                                        <p>마이크를 클릭하면<br>녹음이 시작됩니다.</p>
+                                    </div>
+                                    <!-- txt_advice 클래스가 붙으면 주황색 / _on클래스 붙이면 보임 -->
+                                    <div class="txt_speech txt_speech01 txt_advice">
+                                        <p>억양에 유의하여<br>읽어보세요</p>
+                                    </div>
+                                    <!-- txt_advice 클래스가 붙으면 주황색 / _on클래스 붙이면 보임 -->
+
+
+
+
+
+                                    <div class="txt_speech txt_speech02">
+                                        <p>마이크를 클릭하면<br>녹음이 시작됩니다.</p>
+                                    </div>
+                                    <!-- txt_advice은 2줄일시 txt_advice02는 텍스트가 3줄일 시 / _on클래스 붙이면 보임 -->
+                                    <div class="txt_speech txt_speech02 txt_advice _on">
+                                        <p>억양에 유의하여<br>읽어보세요</p>
+                                    </div>
+                                    <!-- txt_advice은 2줄일시 txt_advice02는 텍스트가 3줄일 시 / _on클래스 붙이면 보임 -->
+
+                                    <div class="txt_speech txt_speech03">
+                                        <p>마이크를 클릭하면<br>녹음이 시작됩니다.</p>
+                                    </div>
+                                    <div class="txt_speech txt_speech03 txt_advice txt_advice02 _on">
+                                        <p>정확도, 억양, 리듬, 강세, 휴지에 유의하여 읽어보세요.</p>
+                                    </div>
+                                    <!-- _on클래스 붙이면 보이기 -->
+                                </div>
+
+                                
+
+
+
+                                <!-- on확인용 _on01 빨간색/ _on02 노란색 / _on03초록색 -->
+                                <div class="on_ch _none">
+                                    <button type="button" class="btn_speech_direct js-open-pop _visible _on1" data-target=".target-pop"><span class="again_btn _on">재녹음</span></button>
+                                    <button type="button" class="btn_speech_direct js-open-pop _on2" data-target=".target-pop"><span class="again_btn">재녹음</span></button>
+                                    <button type="button" class="btn_speech_direct js-open-pop _on3" data-target=".target-pop"><span class="again_btn">재녹음</span></button>
+                                </div>
+                                <!-- on확인용 _on01 빨간색/ _on02 노란색 / _on03초록색 -->
+
+
+
+
+                                <div class="content_foot_btn_group">
+                                    <div class="js_link_speech">
+                                        <a href="javascript:void(0);" class="js_target_link content_next_btn _none_event">정답 보기</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- // 말하기 -->
+
+                            <!-- speechPro 문장 정답 -->
+                            <div class="pt-page pt-page-3">
+                                <h3 class="h3_title">오늘의 영어 문장 정답입니다.</h3>
+                                <p class="an_txt">She completed her <span class="answer_border">literature</span> review. <span class="answer_border">you</span> <span class="answer_border">What</span> She completed her literature review. She completed her literature review.</p>
+
+                                <h4 class="h4_title">총 3회 녹음을 마치면, 정답 문장 제시와 함께 전체 학습자 N명중 상위 몇%인지 출력 - 3회 중 최고점 기준
+                                </h4>
+
+                                <div class="answer_wrap">
+                                    <div>
+                                        <span>평균점수</span>
+                                        <span class="total_num">78</span>
+                                    </div>
+                                    <div>
+                                        <span>참가자 N명 중 상위</span>
+                                        <span class="total_difference">30%</span>
+                                    </div>
+                                </div>
+
+                                <div class="content_foot_btn_group">
+                                    <div class="js_link_chart">
+                                        <a href="javascript:void(0);" class="js_target_link content_foot_btn">나의 발음 분석 레포트</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- // speechPro 문장 정답 -->
+
+
+
+
+
+                            <!-- speechpro chart -->
+                            <div class="pt-page pt-page-4">
+                                <div class="total_wrap">
+                                    <h3 class="h3_title_score">방금 읽은 문장의 점수는 <span>48점</span></h3>
+                                    <div class="score_chart_box">
+                                        <img src="../images/vender/common/sample_chart01.png" alt="오각형">
+                                    </div>
+                                </div>
+
+                                <div class="chart_wrap">
+                                    <div class="flex_between mb20">
+                                        <h3 class="h3_title">상세 점수가 궁금한가요?</h3>
+                                    </div>
+
+                                    <div class="speech_chart_tab js-child-item-click">
+                                        <a href="javascript:void(0)" class="tab_link_item _active" data-target=".target_tab01">음소</a>
+                                        <a href="javascript:void(0)" class="tab_link_item" data-target=".target_tab02">억양</a>
+                                        <a href="javascript:void(0)" class="tab_link_item"  data-target=".target_tab03">리듬</a>
+                                        <a href="javascript:void(0)" class="tab_link_item" data-target=".target_tab04">강세</a>
+                                        <a href="javascript:void(0)" class="tab_link_item" data-target=".target_tab05">휴지</a>
+                                        <a href="javascript:void(0)" class="tab_link_item" data-target=".target_tab06">모두</a>
+                                    </div>
+                                    <div class="tab_content_group">
+                                        <div class="tab_content target_tab01 _open">
+                                            <h4 class="score_title">음소 점수 : 80점</h4>
+                                            <p class="score_sub_txt">음소 점수란... 이러쿵 저러쿵 하여 나온 점수입니다.</p>
+
+                                            <p class="sub_info_txt">단어를 누르면 발음 점수를 볼 수 있습니다.</p>
+                                            <div class="word_list js-child-item-text">
+                                                <a href="javascript:void(0)" class="word_list__item" data-target=".target_text01">
+                                                    <span class="word_style01">Wh</span>
+                                                    <span class="word_style02">at</span>
+                                                </a>
+                                                <a href="javascript:void(0)" class="word_list__item" data-target=".target_text02">
+                                                    <span class="word_style01">are</span>
+                                                </a>
+                                                <a href="javascript:void(0)" class="word_list__item" data-target=".target_text03">
+                                                    <span class="word_style02">you</span>
+                                                </a>
+                                                <a href="javascript:void(0)" class="word_list__item" data-target=".target_text04">
+                                                    <span class="word_style01">up</span>
+                                                </a>
+                                                <a href="javascript:void(0)" class="word_list__item" data-target=".target_text05">
+                                                    <span class="word_style02">t</span>
+                                                    <span class="word_style03">o</span>
+                                                </a>
+                                                <a href="javascript:void(0)" class="word_list__item" data-target=".target_text01">
+                                                    <span class="word_style01">Wh</span>
+                                                    <span class="word_style02">at</span>
+                                                </a>
+                                                <a href="javascript:void(0)" class="word_list__item" data-target=".target_text02">
+                                                    <span class="word_style01">are</span>
+                                                </a>
+                                                <a href="javascript:void(0)" class="word_list__item" data-target=".target_text03">
+                                                    <span class="word_style02">you</span>
+                                                </a>
+                                                <a href="javascript:void(0)" class="word_list__item" data-target=".target_text04">
+                                                    <span class="word_style01">up</span>
+                                                </a>
+                                                <a href="javascript:void(0)" class="word_list__item" data-target=".target_text05">
+                                                    <span class="word_style02">t</span>
+                                                    <span class="word_style03">o</span>
+                                                </a>
+                                                <a href="javascript:void(0)" class="word_list__item" data-target=".target_text05">
+                                                    <span class="word_style02">t</span>
+                                                    <span class="word_style03">o</span>
+                                                </a>
+                                                <a href="javascript:void(0)" class="word_list__item" data-target=".target_text05">
+                                                    <span class="word_style02">t</span>
+                                                    <span class="word_style03">o</span>
+                                                </a>
+                                                <a href="javascript:void(0)" class="word_list__item" data-target=".target_text01">
+                                                    <span class="word_style01">Wh</span>
+                                                    <span class="word_style02">at</span>
+                                                </a>
+                                                <a href="javascript:void(0)" class="word_list__item" data-target=".target_text02">
+                                                    <span class="word_style01">are</span>
+                                                </a>
+                                                <a href="javascript:void(0)" class="word_list__item" data-target=".target_text03">
+                                                    <span class="word_style02">you</span>
+                                                </a>
+                                                <a href="javascript:void(0)" class="word_list__item" data-target=".target_text04">
+                                                    <span class="word_style01">up</span>
+                                                </a>
+                                                <a href="javascript:void(0)" class="word_list__item" data-target=".target_text05">
+                                                    <span class="word_style02">t</span>
+                                                    <span class="word_style03">o</span>
+                                                </a>
+                                            </div>
+                                            <div class="target_text_group">
+                                                <div class="target_text_content target_text01 _open">
+                                                    <div class="score_tree">
+                                                        <h1 class="score_tree__main_word">
+                                                            <strong>what</strong><span>80</span>점
+                                                        </h1>
+
+                                                        <div class="score_tree__sub_group js-child-dl-name">
+                                                            <dl>
+                                                                <dt class="score_tree__main_word">
+                                                                    <strong>at</strong><span>80</span>점
+                                                                </dt>
+                                                                <dd class="score_tree__last js-child-div-name">
+                                                                    <div class="_one">
+                                                                        <div class="score_tree__last_item word_style01">
+                                                                            <span class="_t">t</span>
+                                                                            <span class="_n">400</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </dd>
+                                                            </dl>
+                                                            <dl>
+                                                                <dt class="score_tree__main_word">
+                                                                    <strong>at</strong><span>80</span>점
+                                                                </dt>
+                                                                <dd class="score_tree__last js-child-div-name">
+                                                                    <div>
+                                                                        <div class="score_tree__last_item word_style03">
+                                                                            <span class="_t">a</span>
+                                                                            <span class="_n">40</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div>
+                                                                        <div class="score_tree__last_item word_style03">
+                                                                            <span class="_t">a</span>
+                                                                            <span class="_n">40</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div>
+                                                                        <div class="score_tree__last_item word_style03">
+                                                                            <span class="_t">a</span>
+                                                                            <span class="_n">40</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div>
+                                                                        <div class="score_tree__last_item word_style01">
+                                                                            <span class="_t">t</span>
+                                                                            <span class="_n">40</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div>
+                                                                        <div class="score_tree__last_item word_style01">
+                                                                            <span class="_t">t</span>
+                                                                            <span class="_n">40</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div>
+                                                                        <div class="score_tree__last_item word_style01">
+                                                                            <span class="_t">t</span>
+                                                                            <span class="_n">40</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </dd>
+                                                            </dl>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="target_text_content target_text02">
+                                                    2222
+                                                </div>
+                                                <div class="target_text_content target_text03">
+                                                    3333
+                                                </div>
+                                                <div class="target_text_content target_text04">
+                                                    4444
+                                                </div>
+                                                <div class="target_text_content target_text05">
+                                                    5555
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="tab_content target_tab02">
+                                            <h4 class="score_title">억양 점수 : 80점</h4>
+                                            <p class="score_sub_txt">억양 점수란... 이러쿵 저러쿵 하여 나온 점수입니다.</p>
+                                            <div class="score_chart_box">
+                                                <img src="http://dummyimage.com/800x200&text=Chart_1" alt="chart1">
+                                            </div>
+                                        </div>
+
+                                        <div class="tab_content target_tab03">
+                                            <h4 class="score_title">리듬 점수 : 80점</h4>
+                                            <p class="score_sub_txt">리듬 점수란... 이러쿵 저러쿵 하여 나온 점수입니다.</p>
+                                            <div class="score_chart_box">
+                                                <img src="http://dummyimage.com/800x200&text=Chart_2" alt="chart2">
+                                            </div>
+                                        </div>
+
+                                        <div class="tab_content target_tab04">
+                                            <h4 class="score_title">강세 점수 : 80점</h4>
+                                            <p class="score_sub_txt">강세 점수란... 이러쿵 저러쿵 하여 나온 점수입니다.</p>
+                                            <div class="score_chart_box">
+                                                <img src="http://dummyimage.com/800x200&text=Chart_3" alt="chart3">
+                                            </div>
+                                        </div>
+
+                                        <div class="tab_content target_tab05">
+                                            <h4 class="score_title">휴지 점수 : 80점</h4>
+                                            <p class="score_sub_txt">휴지 점수란... 이러쿵 저러쿵 하여 나온 점수입니다.</p>
+                                            <div class="score_chart_box">
+                                                <div class="sil_box">
+                                                    <span class="_txt">Lorem</span>
+                                                    <span class="_sil">0.9sec</span>
+                                                    <span class="_txt">ipsum</span>
+                                                    <span class="_txt">dolor</span>
+                                                    <span class="_sil">0.3sec</span>
+                                                    <span class="_txt">sit</span>
+                                                    <span class="_txt">amet.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="tab_content target_tab06">
+                                            <h4 class="score_title">모두 점수 : 80점</h4>
+                                            <p class="score_sub_txt">모두 점수란... 이러쿵 저러쿵 하여 나온 점수입니다.</p>
+                                            <div class="score_chart_box">
+                                                <table class="score_table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>title</th>
+                                                            <th>title</th>
+                                                            <th>title</th>
+                                                            <th>title</th>
+                                                            <th>title</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>내용</td>
+                                                            <td>내용</td>
+                                                            <td>내용</td>
+                                                            <td>내용</td>
+                                                            <td>내용</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="content_foot_btn_group">
+                                        <div class="js_link_speech">
+                                            <a href="javascript:void(0);" class="js_target_link content_prev_btn">정답 다시 보기</a>
+                                        </div>
+                                    </div>
+                                </div> <!-- chart end -->
+                            </div>
+                            <!-- // speechpro chart -->
+                        </div>
+
+
+
+
+                    </div>
+                    <!-- // 콘텐츠 내용 -->
+                </section>
+            </div>
+        </div>
+
+        <footer>
+            <div class="wrap">
+                <div class="flex_box">
+                    <div class="mobile_off">
+                        <img src="../images/bufs/logo_bufs_footer.png" alt="">
+                    </div>
+                    <address>
+                        <div class="_txt">46234 부산광역시 금정구 금샘로485번길 65 대표전화 : 051.509.5000 FAX : 051.509.5005</div>
+                        <div class="_txt">Copyright 2022 © BUSAN UNIVERSITY OF FOREIGN STUDIES All rights reserved.
+                        </div>
+                    </address>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

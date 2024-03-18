@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" type="image/png" href="../favicon-32x32.png">
+    <!-- 선호 URL -->
+    <link rel="canonical" href="http://ooo.test.kr">
+    <!-- 페이지 설명 -->
+    <meta name="description" content="미디어젠은...">
+
+    <!-- open graph : 소셜미디어 공유될 때 우선 활용 정보 -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="미디어젠">
+    <meta property="og:description" content="미디어젠은...">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="http://ooo.test.kr">
+
+    <!-- 스타일 -->
+    <link rel="stylesheet" href="../css/popupwindow.css" type="text/css">
+    <link rel="stylesheet" href="../css/popModal.css" type="text/css">
+    <link rel="stylesheet" href="../css/core.css" type="text/css">
+    <link rel="stylesheet" href="../css/main.css" type="text/css">
+    <link rel="stylesheet" href="../css/common.css" type="text/css">
+    <link rel="stylesheet" href="../css/sub.css" type="text/css">
+
+    <link rel="stylesheet" href="../css/bufs_common.css" type="text/css">
+    
+
+    <!-- 스크립트 -->
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/jquery-1.10.1.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/egovframework/common/common.js"></script>
+    <!--왼쪽 하위메뉴 : 공통 -->
+    <script src="../js/left_nav/navBar.js"></script>
+    <!-- 첨부파일 -->
+    <script src="../js/egovframework/com/cmm/fms/EgovMultiFile.js"></script>
+
+    <!-- 유틸 -->
+    <script src="../js/egovframework/com/cmm/utl/EgovCmmUtl.js"></script>
+    <script src="../js/wavus/comm/wavus-util.js"></script>
+    <script src="../js/biz/common/fn_egov_file.js"></script>
+
+    <script src="../js/swiper.min.js"></script>
+    <!-- loading bar 관련-->
+    <script src="../js/biz/common/loading.js"></script>
+    <!-- popup 관련 -->
+    <script src="../js/popModal.js"></script>
+    <script src="../js/popupwindow.js"></script>
+    <script src="../js/biz/common/popupLoad.js"></script>
+
+    <!-- video.js 예제 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.8.1/video-js.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.8.1/video.min.js"></script>
+    <script src="../js/video.js"></script>
+
+    <title>SMS발송</title>
+</head>
+
+<body>
+    <div class="layout_wrap">
+        <div class="header_layout">
+            <div class="header_wrap inner">
+                <a href="" class="main_logo">
+                    <img src="../images/bufs/logo_bufs_main.png" class="main_logo_img" alt="부산외국어센터">
+                </a>
+
+                <nav class="gnb">
+                    <ul class="gnb_list">
+                        <li class="gnb_list__item"><a href="교수_진단평가.html" class="gnb_list__link">진단평가</a></li>
+                        <li class="gnb_list__item"><a href="" class="gnb_list__link gnb_list__link--on">강좌</a></li>
+                        <li class="gnb_list__item"><a href="" class="gnb_list__link">강좌현황</a></li>
+                    </ul>
+                </nav>
+
+                <div class="login_info">
+                    <span class="login_info__txt"><a href="#none" class="login_info__user">홍길동 교수님</a>, 안녕하세요.</span>
+                    <a href="" class="login_info__link">Login</a>
+                    <a href="" class="login_info__link">Logout</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="container_wrap inner">
+                <section class="lnb_wrap">
+                    <h1 class="lnb_title">강좌</h1>
+                    <nav class="lnb">
+                        <ul class="lnb_list">
+                            <li class="lnb_list__item"><a href="전체강좌_리스트.html" class="lnb_list__link">전체 강좌</a></li>
+                            <li class="lnb_list__item"><a href="강좌_개설한강좌리스트.html"
+                                    class="lnb_list__link lnb_list__link--on">내 강좌관리</a></li>
+                        </ul>
+                    </nav>
+                </section>
+
+                <section class="layout_content">
+                    <h1 class="content_main_title">SMS발송 페이지</h1>
+
+                    <!-- 콘텐츠 내용 -->
+                    <div class="content_wrap">
+                        <div>
+                            <h2>달이 떴다고 전화를 주시다니요</h2>
+
+
+                            <br />
+                            <div>달이 떴다고 전화를 주시다니요</div>
+                            <div>이 밤 너무 신나고 근사해요</div>
+                            <div>내 마음에도 생전 처음 보는</div>
+                            <div>환한 달이 떠오르고</div>
+                            <div>산 아래 작은 마을이 그려집니다</div>
+                            <div>간절한 이 그리움들을</div>
+                            <div>사무쳐 오는 이 연정들을</div>
+                            <div>달빛에 실어</div>
+                            <div>당신께 보냅니다</div>
+                            <br />
+                            <div>세상에</div>
+                            <div>강변에 달빛이 곱다고</div>
+                            <div>전화를 다 주시다니요</div>
+                            <div>흐르는 물 어디쯤 눈부시게 부서지는 소리</div>
+                            <div>문득 들려옵니다</div>
+                            <br />
+                            <div>시집《그대, 거침없는 사랑》(푸른 숲) 中</div>
+                        </div>
+
+                        <div class="sms_btn_wrap">
+                            <button type="button" class="sms_send_btn">SMS 팝업 버튼</button>
+                        </div>
+                    </div>
+                    <!-- // 콘텐츠 내용 -->
+                </section>
+            </div>
+        </div>
+
+        <footer>
+            <div class="wrap">
+                <div class="flex_box">
+                    <div class="mobile_off">
+                        <img src="../images/bufs/logo_bufs_footer.png" alt="">
+                    </div>
+                    <address>
+                        <div class="_txt">46234 부산광역시 금정구 금샘로485번길 65 대표전화 : 051.509.5000 FAX : 051.509.5005</div>
+                        <div class="_txt">Copyright 2022 © BUSAN UNIVERSITY OF FOREIGN STUDIES All rights reserved.
+                        </div>
+                    </address>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+
+
+    <!-- popup -->
+    <section class="popup_dim" style="display: flex;">
+        <section class="popup_box" style="width:1200px">
+            <div class="pop_header">
+                <h1 class="pop_header__title">SMS 발송</h1>
+                <a href="" class="pop_header__close"><span hidden>닫기</span></a>
+            </div>
+
+
+
+            <div class="popup_body">
+                <section class="sms_popup_wrap">
+                    <!-- flex 30% -->
+                    <div class="">
+                        <h3 class="sms_popup__title">메세지 작성</h3>
+                        <div class="sms_popup__content sms_popup__write">
+                            <!-- form group -->
+                            <div class="form_inline_group">
+                                <input type="text" name="" id="" class="form_item_text _flex_w100p" placeholder="제목을 입력하세요">
+                            </div>
+
+                            <div class="sms_area_wrap sms_border">
+                                <div class="form_inline_group">
+                                    <textarea name="" id="" rows="10" class="form_item_textarea" placeholder="내용을 입력하세요"></textarea>
+                                </div>
+                                <div class="sms_textarar_btye">0/90byte</div>
+                            </div>
+                        </div> <!-- popup content end -->
+                        <h3 class="sms_popup__title">전송 시각</h3>
+                        <div class="sms_popup__content sms_popup__write">
+                            <div class="form_check_group">
+                                <input type="radio" name="ra01" id="tt01" class="form_radio_group" checked>
+                                <label for="tt01" class="form_item_label">즉시 전송</label>
+                                <input type="radio" name="ra01" id="tt02" class="form_radio_group">
+                                <label for="tt02" class="form_item_label">예약 전송</label>
+                            </div>
+
+
+                            <div class="">
+                                <div class="form_inline_group">
+                                    <input type="date" name="" id="" class="form_item_date">
+                                    <input type="time" name="" id="" class="form_item_time">
+                                </div>
+                            </div>
+                        </div> <!-- popup content end -->
+                    </div>
+                    <!-- flex 70% -->
+                    <div class="">
+                        <h3 class="sms_popup__title">받는 사람</h3>
+                        <div class="sms_popup__content sms_popup__accept">
+                            <section class="sms_popup__search">
+                                <div class="list_search__form">
+                                    <div class="list_search__row">
+                                        <select name="" id="" class="form_item_select">
+                                            <option value="" selected>선택</option>
+                                            <option value="">아메리카노</option>
+                                            <option value="">카페라테</option>
+                                            <option value="">카페오레</option>
+                                            <option value="">에스프레소</option>
+                                        </select>
+                                        <input type="text" name="" id="" class="form_item_text w100p">
+                                        <div class="list_search__btn">
+                                            <button type="button" class="btn_list_search">검색</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="sms_popup__input">
+                                <div class="problem__list_item sms_border">
+                                    <!-- treePopup -->
+                                    <div id="treePopup" class="example_content tree_content">
+                                        <ul class="tree treemenu" id="treePop">
+                                            <li class="tree-closed"><span class="toggler"></span><a
+                                                    href="javascript:fnUpperMenuSel('12000');">진단평가</a>
+                                                <ul id="popmenu12000" class="treemenu" style="display: none;">
+                                                    <li class="tree-closed"><span class="toggler"></span><a
+                                                            href="javascript:fnUpperMenuSel('12100');">진단평가</a>
+                                                        <ul id="popmenu12100" class="treemenu" style="display: none;">
+                                                            <li class="tree-empty"><span class="toggler"></span><a
+                                                                    href="javascript:fnUpperMenuSel('12101');">진단평가
+                                                                    소개</a>
+                                                            </li>
+                                                            <li class="tree-empty"><span class="toggler"></span><a
+                                                                    href="javascript:fnUpperMenuSel('12102');">평가문제관리</a>
+                                                            </li>
+                                                            <li class="tree-empty"><span class="toggler"></span><a
+                                                                    href="javascript:fnUpperMenuSel('12103');">진단평가</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="tree-opened"><span class="toggler"></span><a
+                                                    href="javascript:fnUpperMenuSel('14000');">강의</a>
+                                                <ul id="popmenu14000" class="treemenu" style="display: block;">
+                                                    <li class="tree-opened"><span class="toggler"></span><a
+                                                            href="javascript:fnUpperMenuSel('14100');">강의</a>
+                                                        <ul id="popmenu14100" class="treemenu" style="display: block;">
+                                                            <li class="tree-empty"><span class="toggler"></span><a
+                                                                    href="javascript:fnUpperMenuSel('14101');">전체강좌</a>
+                                                            </li>
+                                                            <li class="tree-empty"><span class="toggler"></span><a
+                                                                    href="javascript:fnUpperMenuSel('14102');">내
+                                                                    강좌관리</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="tree-closed"><span class="toggler"></span><a
+                                                            href="javascript:fnUpperMenuSel('14200');">수강신청</a>
+                                                        <ul id="popmenu14200" class="treemenu" style="display: none;">
+                                                            <li class="tree-empty"><span class="toggler"></span><a
+                                                                    href="javascript:fnUpperMenuSel('14201');">수강신청</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="tree-closed"><span class="toggler"></span><a
+                                                            href="javascript:fnUpperMenuSel('14300');">학습추천</a>
+                                                        <ul id="popmenu14300" class="treemenu" style="display: none;">
+                                                            <li class="tree-empty"><span class="toggler"></span><a
+                                                                    href="javascript:fnUpperMenuSel('14301');">학습추천</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="tree-closed"><span class="toggler"></span><a
+                                                    href="javascript:fnUpperMenuSel('16000');">강좌현황</a>
+                                                <ul id="popmenu16000" class="treemenu" style="display: none;">
+                                                    <li class="tree-closed"><span class="toggler"></span><a
+                                                            href="javascript:fnUpperMenuSel('16100');">강좌현황</a>
+                                                        <ul id="popmenu16100" class="treemenu" style="display: none;">
+                                                            <li class="tree-empty"><span class="toggler"></span><a
+                                                                    href="javascript:fnUpperMenuSel('16101');">현황관리</a>
+                                                            </li>
+                                                            <li class="tree-empty"><span class="toggler"></span><a
+                                                                    href="javascript:fnUpperMenuSel('16102');">성적관리</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="tree-closed"><span class="toggler"></span><a
+                                                    href="javascript:fnUpperMenuSel('90000');">시스템관리</a>
+                                                <ul id="popmenu90000" class="treemenu" style="display: none;">
+                                                    <li class="tree-closed"><span class="toggler"></span><a
+                                                            href="javascript:fnUpperMenuSel('90100');">사용자권한</a>
+                                                        <ul id="popmenu90100" class="treemenu" style="display: none;">
+                                                            <li class="tree-empty"><span class="toggler"></span><a
+                                                                    href="javascript:fnUpperMenuSel('90101');">권한관리</a>
+                                                            </li>
+                                                            <li class="tree-empty"><span class="toggler"></span><a
+                                                                    href="javascript:fnUpperMenuSel('90102');">롤관리</a>
+                                                            </li>
+                                                            <li class="tree-empty"><span class="toggler"></span><a
+                                                                    href="javascript:fnUpperMenuSel('90103');">사용자관리</a>
+                                                            </li>
+                                                            <li class="tree-empty"><span class="toggler"></span><a
+                                                                    href="javascript:fnUpperMenuSel('90104');">로그인정책관리</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="tree-closed"><span class="toggler"></span><a
+                                                            href="javascript:fnUpperMenuSel('90200');">메뉴관리</a>
+                                                        <ul id="popmenu90200" class="treemenu" style="display: none;">
+                                                            <li class="tree-empty"><span class="toggler"></span><a
+                                                                    href="javascript:fnUpperMenuSel('90201');">프로그램관리</a>
+                                                            </li>
+                                                            <li class="tree-empty"><span class="toggler"></span><a
+                                                                    href="javascript:fnUpperMenuSel('90202');">메뉴관리(tree)</a>
+                                                            </li>
+                                                            <li class="tree-empty"><span class="toggler"></span><a
+                                                                    href="javascript:fnUpperMenuSel('90203');">메뉴설정</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="tree-closed"><span class="toggler"></span><a
+                                                            href="javascript:fnUpperMenuSel('90300');">코드관리</a>
+                                                        <ul id="popmenu90300" class="treemenu" style="display: none;">
+                                                            <li class="tree-empty"><span class="toggler"></span><a
+                                                                    href="javascript:fnUpperMenuSel('90301');">공통분류코드</a>
+                                                            </li>
+                                                            <li class="tree-empty"><span class="toggler"></span><a
+                                                                    href="javascript:fnUpperMenuSel('90302');">공통코드</a>
+                                                            </li>
+                                                            <li class="tree-empty"><span class="toggler"></span><a
+                                                                    href="javascript:fnUpperMenuSel('90303');">공통상세코드</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="tree-closed"><span class="toggler"></span><a
+                                                            href="javascript:fnUpperMenuSel('90400');">로그관리</a>
+                                                        <ul id="popmenu90400" class="treemenu" style="display: none;">
+                                                            <li class="tree-empty"><span class="toggler"></span><a
+                                                                    href="javascript:fnUpperMenuSel('90401');">로그관리</a>
+                                                            </li>
+                                                            <li class="tree-empty"><span class="toggler"></span><a
+                                                                    href="javascript:fnUpperMenuSel('90402');">웹로그관리</a>
+                                                            </li>
+                                                            <li class="tree-empty"><span class="toggler"></span><a
+                                                                    href="javascript:fnUpperMenuSel('90403');">접속로그관리</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- treePopup -->
+                                </div>
+                                <div class="problem__list_item sms_border">
+                                    <ul class="sms_select_ch">
+                                        <li>
+                                            <input type="checkbox" name="ch00" id="ch_c01" class="form_item_check">
+                                            <label for="ch_c01" class="form_item_check_parent">전체 선택/해제</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="ch00" id="ch_c02" class="form_item_check">
+                                            <label for="ch_c02" class="form_item_check_parent">홍길동 / 010-1234-5678</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="ch00" id="ch_c03" class="form_item_check">
+                                            <label for="ch_c03" class="form_item_check_parent">홍길동 / 010-1234-5678</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="ch00" id="ch_c04" class="form_item_check">
+                                            <label for="ch_c04" class="form_item_check_parent">홍길동 / 010-1234-5678</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </section>
+
+                            <section class="sms_popup__btn">
+                                <button type="button" class="btn_sms_select">▼ 클릭하면 체크박스의 내용 내려가기 ▼</button>
+                            </section>
+
+                            <section class="sms_popup__txtbox">
+                                <div class="sms_select_txt sms_border">
+                                    홍길동(010-1234-1234), 김길동(010-1234-1234), 박길동(010-1234-1234), 이길동(010-1234-1234), 호길동(010-1234-1234),
+                                    임꺽정(010-1234-5678), 박꺽정(010-1234-5678), 김꺽정(010-1234-5678), 이꺽정(010-1234-5678)
+                                </div>
+                                <span class="sms_popup__warning">
+                                    ※ 수신번호가 중복될 시 자동으로 중복제거 됩니다.
+                                </span>
+                            </section>
+                        </div> <!-- popup content end -->
+                    </div>
+                </section>
+            </div>
+            <div class="button_right_group">
+                <a href="#none" class="btn_cancel">취소</a>
+                <a href="#none" class="btn_save">발송</a>
+            </div>
+        </section>
+    </section>
+    <!-- popup -->
+
+
+
+
+
+    <!-- script 날짜 스크립트 -->
+    <script>
+        // <![CDATA[  <-- For SVG support
+        if ('WebSocket' in window) {
+            (function () {
+                function refreshCSS() {
+                    var sheets = [].slice.call(document.getElementsByTagName("link"));
+                    var head = document.getElementsByTagName("head")[0];
+                    for (var i = 0; i < sheets.length; ++i) {
+                        var elem = sheets[i];
+                        var parent = elem.parentElement || head;
+                        parent.removeChild(elem);
+                        var rel = elem.rel;
+                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                        }
+                        parent.appendChild(elem);
+                    }
+                }
+                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                var address = protocol + window.location.host + window.location.pathname + '/ws';
+                var socket = new WebSocket(address);
+                socket.onmessage = function (msg) {
+                    if (msg.data == 'reload') window.location.reload();
+                    else if (msg.data == 'refreshcss') refreshCSS();
+                };
+                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                    console.log('Live reload enabled.');
+                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                }
+            })();
+        }
+        else {
+            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+        }
+        // ]]>
+    </script>
+    <!-- script -->
+</body>
+
+</html>

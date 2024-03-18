@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- css -->
+  <link rel="stylesheet" href="../../css/vendor/swiper-bundle.min.css"> <!-- swiper css -->
+  <link rel="stylesheet" href="../../../css/vender/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" href="../../css/style.css">
+  <!-- css -->
+
+  <!-- js -->
+  <!-- <script src="../../../js/vendor/jquery-3.7.1.min.js"></script> -->
+  <script src="../../js/vendor/jquery-2.2.4.min.js"></script>
+  <script src="../../../_resource_user/js/vendor/jquery.mCustomScrollbar.js"></script>
+  <!-- <script src="../../../js/vendor/swiper-bundle.min.js"></script> -->
+   <!-- swiper js -->
+  <script src="../../../_resource_user/js/common.js"></script>
+  <!-- js -->
+
+
+  <title>건강나이 동기부여</title>
+</head>
+<body>
+  <div class="container sub_container">
+    <!-- header -->
+    <!-- skip nav -->
+    <div class="skip_nav">
+      <a href="#skipnav_target">본문 영역 바로가기</a>
+    </div>
+    <!-- skip nav -->
+
+    <!-- header_wrap -->
+    <header class="header_wrap">
+      <div class="header">
+        <div class="main_logo_wrap">
+          <h1><a href="../../html/메인/메인.html" class="main_logo"><img src="../../images/common/main_logo.png" alt="1"></a></h1>
+        </div>
+
+        <nav class="gnb_wrap">
+          <ul class="gnb">
+            <!-- gnb_link _active 클래스 넣으면 색 바뀜 -->
+            <li class="gnb_item">
+              <a href="#none" class="gnb_link">환자</a>
+            </li>
+            <li class="gnb_item">
+              <a href="#none" class="gnb_link _active">상태</a>
+            </li>
+            <li class="gnb_item">
+              <a href="#none" class="gnb_link">분석</a>
+            </li>
+            <li class="gnb_item">
+              <a href="#none" class="gnb_link">커뮤니티</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header_info">
+          <div class="header_info__txt">
+            <strong>홍길동</strong>
+            <span>님, 안녕하세요</span>
+          </div>
+          <a href="javascript:void(0);" class="header_info__link">마이페이지</a>
+          <a href="javascript:void(0);" class="header_info__link">로그아웃</a>
+        </div>
+      </div>
+    </header>
+    <!-- header_wrap -->
+    <!-- header -->
+
+    <!-- content 영역 - 서브 페이지 : main_sub_content_wrap -->
+    <section class="main_content_wrap main_sub_content_wrap">
+      <div class="main_content main_sub_content _inner_wrap">
+
+        <main class="main_wrap sub_wrap">
+
+          <div class="flex_row">
+            <section class="flex_item radius_box">
+              <div class="radius_header">
+                <h2 class="radius_header__title">50대 건강나이</h2>
+              </div>
+              <div class="radius_body">
+                <div class="age_group">
+                  <!-- 카드반복 -->
+                  <section class="age_group_card">
+                    <div class="age_card__name">
+                      <strong class="_my">(나)홍길동</strong>
+                    </div>
+
+                    <div class="age_card__age">
+                      <div class="age_card__as">
+                        <span class="_age">52</span>
+                        <span class="_txt">현재나이</span>
+                      </div>
+                      <div class="age_card__is">
+                        <span class="_age">
+                          <span class="_blue">49</span>
+                        </span>
+                        <span class="_txt">건강나이</span>
+                      </div>
+                    </div>
+
+                    <div class="age_card__info_box">
+                      <div class="age_card__info">
+                        <span>심박수</span>
+                        <span>104</span>
+                      </div>
+                      <div class="age_card__info">
+                        <span>혈압</span>
+                        <span>98</span>
+                      </div>
+                      <div class="age_card__info">
+                        <span>체온</span>
+                        <span>36</span>
+                      </div>
+                    </div>
+
+                    <div class="age_card__comm _save">
+                      <a href="#none" class="btn_save js-pop-open" data-target=".pop02">공유하기</a>
+                    </div>
+                  </section>
+                  <!-- // 카드반복 -->
+
+                  <section class="age_group_card">
+                    <div class="age_card__name">
+                      <strong class="">임꺽정</strong>
+                    </div>
+
+                    <div class="age_card__age">
+                      <div class="age_card__as">
+                        <span class="_age">58</span>
+                        <span class="_txt">현재나이</span>
+                      </div>
+                      <div class="age_card__is">
+                        <span class="_age">
+                          <span class="_blue">47</span>
+                        </span>
+                        <span class="_txt">건강나이</span>
+                      </div>
+                    </div>
+
+                    <div class="age_card__info_box">
+                      <div class="age_card__info">
+                        <span>심박수</span>
+                        <span>104</span>
+                      </div>
+                      <div class="age_card__info">
+                        <span>혈압</span>
+                        <span>98</span>
+                      </div>
+                      <div class="age_card__info">
+                        <span>체온</span>
+                        <span>36</span>
+                      </div>
+                    </div>
+
+                    <div class="age_card__comm">
+                      <div class="age_card__icon_box">
+                        <span class="_icon01"><span class="blind">담배</span></span>
+                        <span class="_icon02 _checked"><span class="blind">술</span></span>
+                        <span class="_icon03 _checked"><span class="blind">운동</span></span>
+                      </div>
+                      <div class="age_card__comm_txt js-scroll">담배는 피우지 않고 가끔 술도 마셔요, 
+                        운동은 헬스장에가서 규칙적으로 운동을 하고 있어요.</div>
+                    </div>
+                  </section>
+
+                  <section class="age_group_card">
+                    <div class="age_card__name">
+                      <strong class="">장길산</strong>
+                    </div>
+
+                    <div class="age_card__age">
+                      <div class="age_card__as">
+                        <span class="_age">59</span>
+                        <span class="_txt">현재나이</span>
+                      </div>
+                      <div class="age_card__is">
+                        <span class="_age">
+                          <span class="_blue">48</span>
+                        </span>
+                        <span class="_txt">건강나이</span>
+                      </div>
+                    </div>
+
+                    <div class="age_card__info_box">
+                      <div class="age_card__info">
+                        <span>심박수</span>
+                        <span>104</span>
+                      </div>
+                      <div class="age_card__info">
+                        <span>혈압</span>
+                        <span>98</span>
+                      </div>
+                      <div class="age_card__info">
+                        <span>체온</span>
+                        <span>36</span>
+                      </div>
+                    </div>
+
+                    <div class="age_card__comm">
+                      <div class="age_card__icon_box">
+                        <span class="_icon01"><span class="blind">담배</span></span>
+                        <span class="_icon02"><span class="blind">술</span></span>
+                        <span class="_icon03 _checked"><span class="blind">운동</span></span>
+                      </div>
+                      <div class="age_card__comm_txt js-scroll">
+                        술담배 하지 않고 열심히 운동하고 있습니다.
+                      </div>
+                    </div>
+                  </section>
+
+                  <section class="age_group_card">
+                    <div class="age_card__name">
+                      <strong class="">김대한</strong>
+                    </div>
+
+                    <div class="age_card__age">
+                      <div class="age_card__as">
+                        <span class="_age">53</span>
+                        <span class="_txt">현재나이</span>
+                      </div>
+                      <div class="age_card__is">
+                        <span class="_age">
+                          <span class="_red">56</span>
+                        </span>
+                        <span class="_txt">건강나이</span>
+                      </div>
+                    </div>
+
+                    <div class="age_card__info_box">
+                      <div class="age_card__info _red">
+                        <span>심박수</span>
+                        <span>104</span>
+                      </div>
+                      <div class="age_card__info _red">
+                        <span>혈압</span>
+                        <span>98</span>
+                      </div>
+                      <div class="age_card__info">
+                        <span>체온</span>
+                        <span>36</span>
+                      </div>
+                    </div>
+
+                    <div class="age_card__comm">
+                      <div class="age_card__icon_box">
+                        <span class="_icon01 _checked"><span class="blind">담배</span></span>
+                        <span class="_icon02 _checked"><span class="blind">술</span></span>
+                        <span class="_icon03"><span class="blind">운동</span></span>
+                      </div>
+                      <div class="age_card__comm_txt js-scroll">
+                        하루 한갑의 담배와 거의 매일 술을 마시고, 따로 하고있는 운동은 없어요
+                      </div>
+                    </div>
+                  </section>
+
+                  <section class="age_group_card">
+                    <div class="age_card__name">
+                      <strong class="">최민국</strong>
+                    </div>
+
+                    <div class="age_card__age">
+                      <div class="age_card__as">
+                        <span class="_age">56</span>
+                        <span class="_txt">현재나이</span>
+                      </div>
+                      <div class="age_card__is">
+                        <span class="_age">
+                          <span class="_red">69</span>
+                        </span>
+                        <span class="_txt">건강나이</span>
+                      </div>
+                    </div>
+
+                    <div class="age_card__info_box">
+                      <div class="age_card__info">
+                        <span>심박수</span>
+                        <span>104</span>
+                      </div>
+                      <div class="age_card__info">
+                        <span>혈압</span>
+                        <span>98</span>
+                      </div>
+                      <div class="age_card__info _red">
+                        <span>체온</span>
+                        <span>35.6</span>
+                      </div>
+                    </div>
+
+                    <div class="age_card__comm">
+                      <div class="age_card__icon_box">
+                        <span class="_icon01 _checked"><span class="blind">담배</span></span>
+                        <span class="_icon02 _checked"><span class="blind">술</span></span>
+                        <span class="_icon03 _checked"><span class="blind">운동</span></span>
+                      </div>
+                      <div class="age_card__comm_txt js-scroll">
+                        운동은 하고 있지만, 술과 담배를 좋아해요
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <div class="flex_row">
+            <section class="flex_item radius_box">
+              <div class="radius_header">
+                <h2 class="radius_header__title">60대 건강나이</h2>
+              </div>
+              <div class="radius_body">
+                <div class="age_group">
+                  <!-- 카드반복 -->
+                  <section class="age_group_card">
+                    <div class="age_card__name">
+                      <strong class="">김지영 </strong>
+                    </div>
+
+                    <div class="age_card__age">
+                      <div class="age_card__as">
+                        <span class="_age">60</span>
+                        <span class="_txt">현재나이</span>
+                      </div>
+                      <div class="age_card__is">
+                        <span class="_age">
+                          <span class="_blue">49</span>
+                        </span>
+                        <span class="_txt">건강나이</span>
+                      </div>
+                    </div>
+
+                    <div class="age_card__info_box">
+                      <div class="age_card__info">
+                        <span>심박수</span>
+                        <span>104</span>
+                      </div>
+                      <div class="age_card__info">
+                        <span>혈압</span>
+                        <span>98</span>
+                      </div>
+                      <div class="age_card__info">
+                        <span>체온</span>
+                        <span>36</span>
+                      </div>
+                    </div>
+
+                    <div class="age_card__comm">
+                      <div class="age_card__icon_box">
+                        <span class="_icon01"><span class="blind">담배</span></span>
+                        <span class="_icon02"><span class="blind">술</span></span>
+                        <span class="_icon03 _checked"><span class="blind">운동</span></span>
+                      </div>
+                      <div class="age_card__comm_txt js-scroll">
+                        담배 안피워요, 술 안마셔요, 운동은 거의 매일 하고 있어요.
+                      </div>
+                    </div>
+                  </section>
+                  <!-- // 카드반복 -->
+
+                  <section class="age_group_card">
+                    <div class="age_card__name">
+                      <strong class="">이승준</strong>
+                    </div>
+
+                    <div class="age_card__age">
+                      <div class="age_card__as">
+                        <span class="_age">64</span>
+                        <span class="_txt">현재나이</span>
+                      </div>
+                      <div class="age_card__is">
+                        <span class="_age">
+                          <span class="_blue">58</span>
+                        </span>
+                        <span class="_txt">건강나이</span>
+                      </div>
+                    </div>
+
+                    <div class="age_card__info_box">
+                      <div class="age_card__info">
+                        <span>심박수</span>
+                        <span>104</span>
+                      </div>
+                      <div class="age_card__info">
+                        <span>혈압</span>
+                        <span>98</span>
+                      </div>
+                      <div class="age_card__info">
+                        <span>체온</span>
+                        <span>36</span>
+                      </div>
+                    </div>
+
+                    <div class="age_card__comm">
+                      <div class="age_card__icon_box">
+                        <span class="_icon01"><span class="blind">담배</span></span>
+                        <span class="_icon02"><span class="blind">술</span></span>
+                        <span class="_icon03"><span class="blind">운동</span></span>
+                      </div>
+                      <div class="age_card__comm_txt js-scroll">
+                        담배는 피워본적이 없습니다. 술은 하날에 한번 정도만 아주 가끔 맥주를 마십니다. 운동은 따로 하고있지 않아요.
+                      </div>
+                    </div>
+                  </section>
+                  
+                  <section class="age_group_card">
+                    <div class="age_card__name">
+                      <strong class="">박현우 </strong>
+                    </div>
+
+                    <div class="age_card__age">
+                      <div class="age_card__as">
+                        <span class="_age">62</span>
+                        <span class="_txt">현재나이</span>
+                      </div>
+                      <div class="age_card__is">
+                        <span class="_age">
+                          <span class="_red">68</span>
+                        </span>
+                        <span class="_txt">건강나이</span>
+                      </div>
+                    </div>
+
+                    <div class="age_card__info_box">
+                      <div class="age_card__info">
+                        <span>심박수</span>
+                        <span>104</span>
+                      </div>
+                      <div class="age_card__info">
+                        <span>혈압</span>
+                        <span>98</span>
+                      </div>
+                      <div class="age_card__info">
+                        <span>체온</span>
+                        <span>36</span>
+                      </div>
+                    </div>
+
+                    <div class="age_card__comm">
+                      <div class="age_card__icon_box">
+                        <span class="_icon01 _checked"><span class="blind">담배</span></span>
+                        <span class="_icon02 _checked"><span class="blind">술</span></span>
+                        <span class="_icon03"><span class="blind">운동</span></span>
+                      </div>
+                      <div class="age_card__comm_txt js-scroll">
+                        담배는 가끔 피우고 있고요, 술은 거의 매일 마신다고 보면되고 운동은 전혀 하지 않아요.
+                      </div>
+                    </div>
+                  </section>
+
+                  <section class="age_group_card">
+                    <div class="age_card__name">
+                      <strong class="">정수빈</strong>
+                    </div>
+
+                    <div class="age_card__age">
+                      <div class="age_card__as">
+                        <span class="_age">69</span>
+                        <span class="_txt">현재나이</span>
+                      </div>
+                      <div class="age_card__is">
+                        <span class="_age">
+                          <span class="_red">74</span>
+                        </span>
+                        <span class="_txt">건강나이</span>
+                      </div>
+                    </div>
+
+                    <div class="age_card__info_box">
+                      <div class="age_card__info">
+                        <span>심박수</span>
+                        <span>104</span>
+                      </div>
+                      <div class="age_card__info">
+                        <span>혈압</span>
+                        <span>98</span>
+                      </div>
+                      <div class="age_card__info">
+                        <span>체온</span>
+                        <span>36</span>
+                      </div>
+                    </div>
+
+                    <div class="age_card__comm">
+                      <div class="age_card__icon_box">
+                        <span class="_icon01 _checked"><span class="blind">담배</span></span>
+                        <span class="_icon02"><span class="blind">술</span></span>
+                        <span class="_icon03"><span class="blind">운동</span></span>
+                      </div>
+                      <div class="age_card__comm_txt js-scroll">
+                        술은 전혀 마지시 않고 있습니다. 하지만 담배를 거의 하루에 두갑 정도 피웁니다. 운동은 가끔 하지만 규칙적이지 않아요.
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <div class="flex_row">
+            <section class="flex_item radius_box">
+              <div class="radius_header">
+                <h2 class="radius_header__title">70대 건강나이</h2>
+              </div>
+              <div class="radius_body">
+                <div class="age_group">
+                  <!-- 카드반복 -->
+                  <section class="age_group_card">
+                    <div class="age_card__name">
+                      <strong class="">최민지</strong>
+                    </div>
+
+                    <div class="age_card__age">
+                      <div class="age_card__as">
+                        <span class="_age">77</span>
+                        <span class="_txt">현재나이</span>
+                      </div>
+                      <div class="age_card__is">
+                        <span class="_age">
+                          <span class="_blue">58</span>
+                        </span>
+                        <span class="_txt">건강나이</span>
+                      </div>
+                    </div>
+
+                    <div class="age_card__info_box">
+                      <div class="age_card__info">
+                        <span>심박수</span>
+                        <span>104</span>
+                      </div>
+                      <div class="age_card__info">
+                        <span>혈압</span>
+                        <span>98</span>
+                      </div>
+                      <div class="age_card__info">
+                        <span>체온</span>
+                        <span>36</span>
+                      </div>
+                    </div>
+
+                    <div class="age_card__comm">
+                      <div class="age_card__icon_box">
+                        <span class="_icon01"><span class="blind">담배</span></span>
+                        <span class="_icon02"><span class="blind">술</span></span>
+                        <span class="_icon03"><span class="blind">운동</span></span>
+                      </div>
+                      <div class="age_card__comm_txt js-scroll">
+                        술담배 운동 아무것도 안해요. 스트레스 받지 않게 음악 감상과 책을 많이 읽어요 이게 건강과 관련이 있는지는 잘 모르겠어요. 하지만 그것 때문이라고 믿고 있어서 추천합니다.
+                      </div>
+                    </div>
+                  </section>
+                  <!-- // 카드반복 -->
+
+                  <section class="age_group_card">
+                    <div class="age_card__name">
+                      <strong class="">강태영</strong>
+                    </div>
+
+                    <div class="age_card__age">
+                      <div class="age_card__as">
+                        <span class="_age">73</span>
+                        <span class="_txt">현재나이</span>
+                      </div>
+                      <div class="age_card__is">
+                        <span class="_age">
+                          <span class="_blue">67</span>
+                        </span>
+                        <span class="_txt">건강나이</span>
+                      </div>
+                    </div>
+
+                    <div class="age_card__info_box">
+                      <div class="age_card__info">
+                        <span>심박수</span>
+                        <span>104</span>
+                      </div>
+                      <div class="age_card__info">
+                        <span>혈압</span>
+                        <span>98</span>
+                      </div>
+                      <div class="age_card__info">
+                        <span>체온</span>
+                        <span>36</span>
+                      </div>
+                    </div>
+
+                    <div class="age_card__comm">
+                      <div class="age_card__icon_box">
+                        <span class="_icon01"><span class="blind">담배</span></span>
+                        <span class="_icon02"><span class="blind">술</span></span>
+                        <span class="_icon03 _checked"><span class="blind">운동</span></span>
+                      </div>
+                      <div class="age_card__comm_txt js-scroll">
+                        건강 상 문제로 담배는 젊었을 때 피우고 끊었습니다. 술도 마시지 않고 있습니다. 건강 때 문에 운동을 매일 하고있어요.
+                      </div>
+                    </div>
+                  </section>
+
+                  <section class="age_group_card">
+                    <div class="age_card__name">
+                      <strong class="">윤서연</strong>
+                    </div>
+
+                    <div class="age_card__age">
+                      <div class="age_card__as">
+                        <span class="_age">79</span>
+                        <span class="_txt">현재나이</span>
+                      </div>
+                      <div class="age_card__is">
+                        <span class="_age">
+                          <span class="_blue">70</span>
+                        </span>
+                        <span class="_txt">건강나이</span>
+                      </div>
+                    </div>
+
+                    <div class="age_card__info_box">
+                      <div class="age_card__info">
+                        <span>심박수</span>
+                        <span>104</span>
+                      </div>
+                      <div class="age_card__info">
+                        <span>혈압</span>
+                        <span>98</span>
+                      </div>
+                      <div class="age_card__info">
+                        <span>체온</span>
+                        <span>36</span>
+                      </div>
+                    </div>
+
+                    <div class="age_card__comm">
+                      <div class="age_card__icon_box">
+                        <span class="_icon01"><span class="blind">담배</span></span>
+                        <span class="_icon02"><span class="blind">술</span></span>
+                        <span class="_icon03 _checked"><span class="blind">운동</span></span>
+                      </div>
+                      <div class="age_card__comm_txt js-scroll">
+                        술 담배 안하고, 운동만 열심히 합니다.
+                      </div>
+                    </div>
+                  </section>
+
+                  <section class="age_group_card">
+                    <div class="age_card__name">
+                      <strong class="">한재호</strong>
+                    </div>
+
+                    <div class="age_card__age">
+                      <div class="age_card__as">
+                        <span class="_age">73</span>
+                        <span class="_txt">현재나이</span>
+                      </div>
+                      <div class="age_card__is">
+                        <span class="_age">
+                          <span class="_red">80</span>
+                        </span>
+                        <span class="_txt">건강나이</span>
+                      </div>
+                    </div>
+
+                    <div class="age_card__info_box">
+                      <div class="age_card__info">
+                        <span>심박수</span>
+                        <span>104</span>
+                      </div>
+                      <div class="age_card__info">
+                        <span>혈압</span>
+                        <span>98</span>
+                      </div>
+                      <div class="age_card__info">
+                        <span>체온</span>
+                        <span>36</span>
+                      </div>
+                    </div>
+
+                    <div class="age_card__comm">
+                      <div class="age_card__icon_box">
+                        <span class="_icon01 _checked"><span class="blind">담배</span></span>
+                        <span class="_icon02 _checked"><span class="blind">술</span></span>
+                        <span class="_icon03"><span class="blind">운동</span></span>
+                      </div>
+                      <div class="age_card__comm_txt js-scroll">
+                        담배도 안피우고 술도 안마셔요. 몸이 안좋아서 운동도 할 수 없습니다 왜이렇게 결과가 안좋은지 모르겠어요.
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </section>
+          </div>
+        </main>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer_wrap">
+  <div class="footer">
+    
+    <div class="ft_content_wrap">
+      <section class="ft_info_wrap">
+        <div class="fnb_wrap">
+          <ul class="fnb">
+            <li class="fnb__item"><a href="#none" class="fnb__link">저작권보호정책ㅣ</a></li>
+            <li class="fnb__item"><a href="#none" class="fnb__link">이메일무단수집거부</a></li>
+          </ul>
+        </div>
+        <address class="ft_addr_wrap">
+          <span>(04520) 서울특별시 중구 청계천로 14(무교동 77) TEL: 02.3780.9700</span>
+          <span>Copyrightⓒ2023 NATIONAL INSTITUTE FOR LIFELONG EDUCATION. All Rights Reserved.</span>
+        </address>
+      </section>
+      <section class="footer_relation_wrap">
+        <select name="siteSelect" id="openSite" class="footer_relation__select" title="관련사이트 바로가기">
+          <option value="javascript:void(0);" selected="selected" disabled="disabled">관련사이트 바로가기</option>
+          <option value="javascript:void(0);">질병관리청</option>
+          <option value="javascript:void(0);">한국건강관리협회</option>
+          <option value="javascript:void(0);">대한보건협회</option>
+        </select>
+        <button type="button" class="footer_relation__btn" title="새 창으로 열림" onclick="javascript:openSite();">이동</button>
+      </section>
+    </div>
+  </div>
+</footer>
+
+<!-- 하단 스크립트 --> 
+<script>
+  // 메인 - search banner
+  const serachSwiper01 = new Swiper('.search_swiper01', {
+    breakpoints: {
+      768: {
+        spaceBetween : 34, // 슬라이드간 간격
+        slidesPerView: 7,  //브라우저가 768보다 클 때
+      },
+      320: {
+        spaceBetween : 20, // 슬라이드간 간격
+        slidesPerView: "auto",  //브라우저가 768보다 클 때
+        slidesPerGroup: 1,
+      }
+    },
+    centeredSlides: false,  //이녀석을 false로 바꾸면 왼쪽부터 순차적으로 슬라이드가 들어섬
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    touchRatio: 0, // 드래그 금지
+    speed : 1000,
+    autoplay: {
+      delay: 3000,
+      pauseOnMouseEnter: false,
+      disableOnInteraction: false,
+    },
+  });
+  const serachSwiper02 = new Swiper('.search_swiper02', {
+    breakpoints: {
+      768: {
+        spaceBetween : 34, // 슬라이드간 간격
+        slidesPerView: 7,  //브라우저가 768보다 클 때
+      },
+      320: {
+        spaceBetween : 20, // 슬라이드간 간격
+        slidesPerView: "auto",  //브라우저가 768보다 클 때
+        slidesPerGroup: 1,
+      }
+    },
+    centeredSlides: false,  //이녀석을 false로 바꾸면 왼쪽부터 순차적으로 슬라이드가 들어섬
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    touchRatio: 0, // 드래그 금지
+    speed : 1000,
+    autoplay: {
+      delay: 3000,
+      pauseOnMouseEnter: false,
+      disableOnInteraction: false,
+    },
+  });
+  const serachSwiper03 = new Swiper('.search_swiper03', {
+    breakpoints: {
+      768: {
+        spaceBetween : 34, // 슬라이드간 간격
+        slidesPerView: 7,  //브라우저가 768보다 클 때
+      },
+      320: {
+        spaceBetween : 20, // 슬라이드간 간격
+        slidesPerView: "auto",  //브라우저가 768보다 클 때
+        slidesPerGroup: 1,
+      }
+    },
+    centeredSlides: false,  //이녀석을 false로 바꾸면 왼쪽부터 순차적으로 슬라이드가 들어섬
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    touchRatio: 0, // 드래그 금지
+    speed : 1000,
+    autoplay: {
+      delay: 3000,
+      pauseOnMouseEnter: true,
+      disableOnInteraction: false,
+    },
+  });
+  const serachSwiper04 = new Swiper('.search_swiper04', {
+    breakpoints: {
+      768: {
+        spaceBetween : 34, // 슬라이드간 간격
+        slidesPerView: 7,  //브라우저가 768보다 클 때
+      },
+      320: {
+        spaceBetween : 20, // 슬라이드간 간격
+        slidesPerView: "auto",  //브라우저가 768보다 클 때
+        slidesPerGroup: 1,
+      }
+    },
+    centeredSlides: false,  //이녀석을 false로 바꾸면 왼쪽부터 순차적으로 슬라이드가 들어섬
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    touchRatio: 0, // 드래그 금지
+    speed : 1000,
+    autoplay: {
+      delay: 3000,
+      pauseOnMouseEnter: true,
+      disableOnInteraction: false,
+    },
+  });
+  const serachSwiper05 = new Swiper('.search_swiper05', {
+    breakpoints: {
+      768: {
+        spaceBetween : 34, // 슬라이드간 간격
+        slidesPerView: 7,  //브라우저가 768보다 클 때
+      },
+      320: {
+        spaceBetween : 20, // 슬라이드간 간격
+        slidesPerView: "auto",  //브라우저가 768보다 클 때
+        slidesPerGroup: 1,
+      }
+    },
+    centeredSlides: false,  //이녀석을 false로 바꾸면 왼쪽부터 순차적으로 슬라이드가 들어섬
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    touchRatio: 0, // 드래그 금지
+    speed : 1000,
+    autoplay: {
+      delay: 3000,
+      pauseOnMouseEnter: true,
+      disableOnInteraction: false,
+    },
+  });
+  const serachSwiper06 = new Swiper('.search_swiper06', {
+    breakpoints: {
+      768: {
+        spaceBetween : 34, // 슬라이드간 간격
+        slidesPerView: 7,  //브라우저가 768보다 클 때
+      },
+      320: {
+        spaceBetween : 20, // 슬라이드간 간격
+        slidesPerView: "auto",  //브라우저가 768보다 클 때
+        slidesPerGroup: 1,
+      }
+    },
+    centeredSlides: false,  //이녀석을 false로 바꾸면 왼쪽부터 순차적으로 슬라이드가 들어섬
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    touchRatio: 0, // 드래그 금지
+    speed : 1000,
+    autoplay: {
+      delay: 3000,
+      pauseOnMouseEnter: true,
+      disableOnInteraction: false,
+    },
+  });
+  const serachSwiper07 = new Swiper('.search_swiper07', {
+    breakpoints: {
+      768: {
+        spaceBetween : 34, // 슬라이드간 간격
+        slidesPerView: 7,  //브라우저가 768보다 클 때
+      },
+      320: {
+        spaceBetween : 20, // 슬라이드간 간격
+        slidesPerView: "auto",  //브라우저가 768보다 클 때
+        slidesPerGroup: 1,
+      }
+    },
+    centeredSlides: false,  //이녀석을 false로 바꾸면 왼쪽부터 순차적으로 슬라이드가 들어섬
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    touchRatio: 0, // 드래그 금지
+    speed : 1000,
+    autoplay: {
+      delay: 3000,
+      pauseOnMouseEnter: true,
+      disableOnInteraction: false,
+    },
+  });
+
+
+
+  // 푸터 배너
+  const swiper = new Swiper('.swiper', {
+    breakpoints: {
+      768: {
+        spaceBetween : 30, // 슬라이드간 간격
+        slidesPerView : 5, // 동시에 보여줄 슬라이드 갯수
+        loopAdditionalSlides: 1, // 슬라이드 반복 시 마지막 슬라이드에서 다음 슬라이드가 보여지지 않는 현상 수정
+        loopedSlides: 2, // 1번 로고를 1번에 보이기 위해 억지로 loopedSlides: 2를 주었기 때문에(ft_logo3 = loopedSlides:2번임.)
+      },
+      320: {
+        spaceBetween : 20, // 슬라이드간 간격
+        slidesPerView: "auto",  //브라우저가 768보다 클 때
+        slidesPerGroup: 1,
+        loopAdditionalSlides: 1,
+        loopedSlides: 2,
+      }
+    },
+    centeredSlides: true, // true 인 경우 활성 슬라이드는 항상 왼쪽이 아닌 가운데에 배치됩니다. - false가 되면 loop가 안도는 현상 발생... - 마지막 이미지 뒤로 1번 이미지가 형성이 안됨.
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    speed : 1000,
+    autoplay: {
+      delay: 5000,
+      pauseOnMouseEnter: true,
+      disableOnInteraction: false,
+    },
+  });
+
+
+
+  // swiper mouseover 시 멈추고, mouseout시 다시 재생 시작.
+  $(document).ready(function(){
+    $('.swiper-slide').on('mouseover', function(){
+      swiper.autoplay.stop();
+    });
+    $('.swiper-slide').on('mouseout', function(){
+      swiper.autoplay.start();
+    });
+  }); // document ready end
+</script>
+<!-- 하단 스크립트 -->
+    <!-- footer -->
+  </div>
+  
+  <section class="popup_dim pop02" style="display: none;">
+    <section class="popup_box" style="width:600px;">
+      <div class="pop_header">
+        <h1 class="pop_header__title">건강나이 공유</h1>
+        <a href="" class="pop_header__close"><span hidden>닫기</span></a>
+      </div>
+      <div class="popup_body">
+        <ul class="age_community">
+          <li>
+            <div class="form_radio__item">
+              <input type="checkbox" name="" id="ck01" class="">
+              <label for="ck01" class="age_community_label">매일 2개비 이상의 담배를 피우고 있습니다.</label>
+            </div>
+          </li>
+          <li>
+            <div class="form_radio__item">
+              <input type="checkbox" name="" id="ck02" class="">
+              <label for="ck02" class="age_community_label">일주일에 3번 이상 술을 마시고 있습니다.</label>
+            </div>
+          </li>
+          <li>
+            <div class="form_radio__item">
+              <input type="checkbox" name="" id="ck03" class="">
+              <label for="ck03" class="age_community_label">일주일에 2번 숨이 찰 정도의 꾸준한 운동을 하고있습니다.</label>
+            </div>
+          </li>
+        </ul>
+        <div class="">
+          <textarea name="" id="" class="form_item_textarea" cols="30" rows="10" style="height: 100px;" placeholder="나의 건강나이 유지 비결을 적고 공유하세요."></textarea>
+        </div>
+      </div>
+      <div class="button_right_group">
+        <a href="#none" class="btn_cancel js-pop-close" data-target=".popup_dim">취소</a>
+        <a href="#none" class="btn_save js-pop-close" data-target=".popup_dim">공유</a>
+      </div>
+    </section>
+  </section>
+  
+</body>
+</html>

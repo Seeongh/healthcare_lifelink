@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 파비콘 -->
+  <link rel="shortcut icon" type="image/png" href="../favicon-32x32.png">
+  <!-- 선호 URL -->
+  <link rel="canonical" href="http://ooo.test.kr">
+  <!-- 페이지 설명 -->
+  <meta name="description" content="미디어젠은...">
+
+  <!-- open graph : 소셜미디어 공유될 때 우선 활용 정보 -->
+  <meta property="og:type" content="website"> 
+  <meta property="og:title" content="미디어젠">
+  <meta property="og:description" content="미디어젠은...">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="http://ooo.test.kr">
+
+  <!-- 스타일 -->
+  <link rel="stylesheet" href="../css/popupwindow.css" type="text/css">
+  <link rel="stylesheet" href="../css/popModal.css" type="text/css">
+  <link rel="stylesheet" href="../css/core.css" type="text/css">
+  <link rel="stylesheet" href="../css/main.css" type="text/css">
+  <link rel="stylesheet" href="../css/common.css" type="text/css">
+  <link rel="stylesheet" href="../css/sub.css" type="text/css">
+  
+  <link rel="stylesheet" href="../css/bufs_common.css" type="text/css">
+  
+
+  <!-- 스크립트 -->
+  <script src="../js/jquery-3.1.1.min.js"></script>
+  <script src="../js/jquery-1.10.1.min.js"></script>
+  <script src="../js/jquery-ui.min.js"></script>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/common.js"></script>
+  <script src="../js/egovframework/common/common.js"></script>
+  <!--왼쪽 하위메뉴 : 공통 -->
+  <script src="../js/left_nav/navBar.js"></script>
+  <!-- 첨부파일 -->
+  <script src="../js/egovframework/com/cmm/fms/EgovMultiFile.js"></script>
+
+  <!-- 유틸 -->
+  <script src="../js/egovframework/com/cmm/utl/EgovCmmUtl.js"></script>
+  <script src="../js/wavus/comm/wavus-util.js"></script>
+  <script src="../js/biz/common/fn_egov_file.js"></script>
+
+  <script  src="../js/swiper.min.js" ></script>
+  <!-- loading bar 관련-->
+  <script src="../js/biz/common/loading.js"></script>
+  <!-- popup 관련 -->
+  <script src="../js/popModal.js"></script>
+  <script src="../js/popupwindow.js"></script>
+  <script src="../js/biz/common/popupLoad.js"></script>
+
+  <!-- video.js 예제 -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.8.1/video-js.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.8.1/video.min.js"></script>
+  <script src="../js/video.js"></script>
+
+  <title>학생 학습분석</title>
+</head>
+<body>
+  <div class="layout_wrap">
+    <div class="header_layout">
+      <div class="header_wrap inner">
+        <a href="" class="main_logo">
+          <img src="../images/layout/logo.png" class="main_logo_img" alt="부산외국어센터">
+          <span>MZ Healthcare</span>
+        </a>
+  
+        <nav class="gnb">
+          <ul class="gnb_list">
+            <li class="gnb_list__item"><a href="교수_진단평가.html" class="gnb_list__link">진단평가</a></li>
+            <li class="gnb_list__item"><a href="" class="gnb_list__link gnb_list__link--on">강좌</a></li>
+            <li class="gnb_list__item"><a href="" class="gnb_list__link">강좌현황</a></li>
+          </ul>
+        </nav>
+  
+        <div class="login_info">
+          <span class="login_info__txt"><strong class="login_info__user">홍길동</strong> 님, 안녕하세요.</span>
+          <span class="login_info_bar"></span>
+          <a href="" class="mypage_link">마이페이지</a>
+          <a href="" class="login_info__link">Login</a>
+          <a href="" class="login_info__link">Logout</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="container_wrap inner">
+        <section class="lnb_wrap">
+          <h1 class="lnb_title">강좌</h1>
+          <nav class="lnb">
+            <ul class="lnb_list">
+              <li class="lnb_list__item"><a href="전체강좌_리스트.html" class="lnb_list__link">전체 강좌</a></li>
+              <li class="lnb_list__item"><a href="강좌_개설한강좌리스트.html" class="lnb_list__link lnb_list__link--on">내 강좌관리</a></li>
+            </ul>
+          </nav>
+        </section>
+  
+        <section class="layout_content">
+          <h1 class="content_main_title">건강정보</h1> 
+          
+          <!-- 콘텐츠 내용 -->
+          <div class="content_wrap">
+            <section class="radius_con">
+              <div class="chart_header">
+                <h1 class="chart_header__chart01">심박수</h1>
+                <h1 class="chart_header__chart02">산소포화도</h1>
+                <h1 class="chart_header__chart03">운동량</h1>
+                <h1 class="chart_header__chart04">스트레스</h1>
+                <h1 class="chart_header__chart05">수면</h1>
+                <h1 class="chart_header__chart06">혈압</h1>
+                <h1 class="chart_header__chart07">호흡수</h1>
+                <h1 class="chart_header__chart08">체온</h1>
+
+                <div class="chart_header__tab">
+                  <a href="javascript:void(0);" class="chart_header__tab_link--on">1일</a>
+                  <a href="javascript:void(0);" class="chart_header__tab_link">1주일</a>
+                  <a href="javascript:void(0);" class="chart_header__tab_link">1개월</a>
+                  <a href="javascript:void(0);" class="chart_header__tab_link">1년</a>
+                </div>
+              </div>
+
+              <div class="flex_box _end">
+                <div class="move_date">
+                  <a href="" class="move_date__prev"><span hidden></span></a>
+                  <span class="move_date__txt">2023.3.24</span> 
+                  <a href="" class="move_date__next"><span hidden></span></a>
+                </div>
+              </div>
+              
+              <div class="">
+                chart
+              </div>
+              
+            </section>
+          </div>
+          <!-- // 콘텐츠 내용 -->
+        </section>
+      </div>
+    </div>
+    
+    <footer>
+      -
+    </footer>
+  </div>
+</body>
+</html>

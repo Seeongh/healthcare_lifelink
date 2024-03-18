@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- css -->
+  <link rel="stylesheet" href="../../css/vendor/swiper-bundle.min.css"> <!-- swiper css -->
+  <link rel="stylesheet" href="../../../css/vender/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" href="../../css/style.css">
+  <!-- css -->
+
+  <!-- js -->
+  <!-- <script src="../../../js/vendor/jquery-3.7.1.min.js"></script> -->
+  <script src="../../js/vendor/jquery-2.2.4.min.js"></script>
+  <script src="../../../_resource_user/js/vendor/jquery.mCustomScrollbar.js"></script>
+  <!-- <script src="../../../js/vendor/swiper-bundle.min.js"></script> -->
+   <!-- swiper js -->
+  <script src="../../../_resource_user/js/common.js"></script>
+  <!-- js -->
+
+
+  <title>분석</title>
+</head>
+<body>
+  <div class="container sub_container">
+    <!-- header -->
+    <!-- skip nav -->
+    <div class="skip_nav">
+      <a href="#skipnav_target">본문 영역 바로가기</a>
+    </div>
+    <!-- skip nav -->
+
+    <!-- header_wrap -->
+    <header class="header_wrap">
+      <div class="header">
+        <div class="main_logo_wrap">
+          <h1><a href="../../html/메인/메인.html" class="main_logo"><img src="../../images/common/main_logo.png" alt="1"></a></h1>
+        </div>
+
+        <nav class="gnb_wrap">
+          <ul class="gnb">
+            <!-- gnb_link _active 클래스 넣으면 색 바뀜 -->
+            <li class="gnb_item">
+              <a href="#none" class="gnb_link">환자</a>
+            </li>
+            <li class="gnb_item">
+              <a href="#none" class="gnb_link _active">상태</a>
+            </li>
+            <li class="gnb_item">
+              <a href="#none" class="gnb_link">분석</a>
+            </li>
+            <li class="gnb_item">
+              <a href="#none" class="gnb_link">커뮤니티</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header_info">
+          <div class="header_info__txt">
+            <strong>홍길동</strong>
+            <span>님, 안녕하세요</span>
+          </div>
+          <a href="javascript:void(0);" class="header_info__link">마이페이지</a>
+          <a href="javascript:void(0);" class="header_info__link">로그아웃</a>
+        </div>
+      </div>
+    </header>
+    <!-- header_wrap -->
+    <!-- header -->
+
+    <!-- content 영역 - 서브 페이지 : main_sub_content_wrap -->
+    <section class="main_content_wrap main_sub_content_wrap">
+      <div class="main_content main_sub_content _inner_wrap">
+
+        <main class="main_wrap sub_wrap">
+
+          <div class="flex_row">
+            <section class="flex_item radius_box">
+              <div class="radius_body">
+
+                <div class="flex_row">
+                  <h1 class="flex_item">홍길동 (1234)</h1>
+
+                  <ul class="user_info flex_item__col2 mt10">
+                    <li class="user_info__item">
+                      <strong class="user_info__title">성별</strong>
+                      <div class="user_info__val">
+                        <strong>여</strong>
+                      </div>
+                    </li>
+                    <li class="user_info__item">
+                      <strong class="user_info__title">혈액형</strong>
+                      <div class="user_info__val">
+                        <strong>AB</strong>
+                      </div>
+                    </li>
+                    <li class="user_info__item">
+                      <strong class="user_info__title">키</strong>
+                      <div class="user_info__val">
+                        <strong>168</strong>
+                        <span>cm</span>
+                      </div>
+                    </li>
+                    <li class="user_info__item">
+                      <strong class="user_info__title">몸무게</strong>
+                      <div class="user_info__val">
+                        <strong>48</strong>
+                        <span>kg</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <div class="flex_row">
+            <!-- AI 건강 주치의 -->
+            <section class="flex_item radius_box">
+              <div class="radius_header">
+                <h2 class="radius_header__title">상세 정보</h2>
+              </div>
+              <div class="radius_body">
+                <!-- 날짜 선택 -->
+                <section class="chart_search">
+                  <div class="form_inline_group">
+                    <button type="button" class="form_button">월별</button>
+                    <button type="button" class="form_button">주별</button>
+                    <input type="text" name="" id="" class="form_item_date ml5">
+                  </div>
+                </section>
+                
+                <!-- 탭 -->
+                <ul class="user_state _row mb10">
+                  <li class="user_state__item _active">
+                    <a href="">
+                      <div class="user_state__title _state01">
+                        <strong>심박수</strong>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="user_state__item">
+                    <a href="">
+                      <div class="user_state__title _state02">
+                        <strong>혈압</strong>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="user_state__item">
+                    <a href="">
+                      <div class="user_state__title _state03">
+                        <strong>체온</strong>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="user_state__item">
+                    <a href="">
+                      <div class="user_state__title _state04">
+                        <strong>스트레스</strong>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="user_state__item">
+                    <a href="">
+                      <div class="user_state__title _state05">
+                        <strong>걷기</strong>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="user_state__item">
+                    <a href="">
+                      <div class="user_state__title _state06">
+                        <strong>수면</strong>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+                <!-- //탭 -->
+
+                <!-- 차트박스 -->
+                <div class="chat" style="height: 300px;">
+                  <img src="http://dummyimage.com/1000x300" alt="" style="width:100%;height: 100%;">
+                </div>
+
+              </div>
+            </section>
+          </div>
+
+          <div class="flex_row">
+            <!-- 건강 점수 -->
+            <section class="flex_item__col1 radius_box _relative">
+              <div class="radius_header">
+                <h2 class="radius_header__title">건강 점수</h2>
+              </div>
+              <div class="radius_body">
+                <strong class="chart_score">40</strong>
+              </div>
+            </section>
+
+            <!-- 건강 그래프 -->
+            <section class="flex_item__col2 radius_box">
+              <div class="radius_header">
+                <h2 class="radius_header__title">건강 그래프</h2>
+              </div>
+              <div class="radius_body">
+                
+                <div class="chat" style="height: 300px;">
+                  <img src="http://dummyimage.com/1000x300" alt="" style="width:100%;height: 100%;">
+                </div>
+
+              </div>
+            </section>
+          </div>
+          
+        </main>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer_wrap">
+  <div class="footer">
+    
+    <div class="ft_content_wrap">
+      <section class="ft_info_wrap">
+        <div class="fnb_wrap">
+          <ul class="fnb">
+            <li class="fnb__item"><a href="#none" class="fnb__link">저작권보호정책ㅣ</a></li>
+            <li class="fnb__item"><a href="#none" class="fnb__link">이메일무단수집거부</a></li>
+          </ul>
+        </div>
+        <address class="ft_addr_wrap">
+          <span>(04520) 서울특별시 중구 청계천로 14(무교동 77) TEL: 02.3780.9700</span>
+          <span>Copyrightⓒ2023 NATIONAL INSTITUTE FOR LIFELONG EDUCATION. All Rights Reserved.</span>
+        </address>
+      </section>
+      <section class="footer_relation_wrap">
+        <select name="siteSelect" id="openSite" class="footer_relation__select" title="관련사이트 바로가기">
+          <option value="javascript:void(0);" selected="selected" disabled="disabled">관련사이트 바로가기</option>
+          <option value="javascript:void(0);">질병관리청</option>
+          <option value="javascript:void(0);">한국건강관리협회</option>
+          <option value="javascript:void(0);">대한보건협회</option>
+        </select>
+        <button type="button" class="footer_relation__btn" title="새 창으로 열림" onclick="javascript:openSite();">이동</button>
+      </section>
+    </div>
+  </div>
+</footer>
+
+<!-- 하단 스크립트 --> 
+<script>
+  // 메인 - search banner
+  const serachSwiper01 = new Swiper('.search_swiper01', {
+    breakpoints: {
+      768: {
+        spaceBetween : 34, // 슬라이드간 간격
+        slidesPerView: 7,  //브라우저가 768보다 클 때
+      },
+      320: {
+        spaceBetween : 20, // 슬라이드간 간격
+        slidesPerView: "auto",  //브라우저가 768보다 클 때
+        slidesPerGroup: 1,
+      }
+    },
+    centeredSlides: false,  //이녀석을 false로 바꾸면 왼쪽부터 순차적으로 슬라이드가 들어섬
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    touchRatio: 0, // 드래그 금지
+    speed : 1000,
+    autoplay: {
+      delay: 3000,
+      pauseOnMouseEnter: false,
+      disableOnInteraction: false,
+    },
+  });
+  const serachSwiper02 = new Swiper('.search_swiper02', {
+    breakpoints: {
+      768: {
+        spaceBetween : 34, // 슬라이드간 간격
+        slidesPerView: 7,  //브라우저가 768보다 클 때
+      },
+      320: {
+        spaceBetween : 20, // 슬라이드간 간격
+        slidesPerView: "auto",  //브라우저가 768보다 클 때
+        slidesPerGroup: 1,
+      }
+    },
+    centeredSlides: false,  //이녀석을 false로 바꾸면 왼쪽부터 순차적으로 슬라이드가 들어섬
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    touchRatio: 0, // 드래그 금지
+    speed : 1000,
+    autoplay: {
+      delay: 3000,
+      pauseOnMouseEnter: false,
+      disableOnInteraction: false,
+    },
+  });
+  const serachSwiper03 = new Swiper('.search_swiper03', {
+    breakpoints: {
+      768: {
+        spaceBetween : 34, // 슬라이드간 간격
+        slidesPerView: 7,  //브라우저가 768보다 클 때
+      },
+      320: {
+        spaceBetween : 20, // 슬라이드간 간격
+        slidesPerView: "auto",  //브라우저가 768보다 클 때
+        slidesPerGroup: 1,
+      }
+    },
+    centeredSlides: false,  //이녀석을 false로 바꾸면 왼쪽부터 순차적으로 슬라이드가 들어섬
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    touchRatio: 0, // 드래그 금지
+    speed : 1000,
+    autoplay: {
+      delay: 3000,
+      pauseOnMouseEnter: true,
+      disableOnInteraction: false,
+    },
+  });
+  const serachSwiper04 = new Swiper('.search_swiper04', {
+    breakpoints: {
+      768: {
+        spaceBetween : 34, // 슬라이드간 간격
+        slidesPerView: 7,  //브라우저가 768보다 클 때
+      },
+      320: {
+        spaceBetween : 20, // 슬라이드간 간격
+        slidesPerView: "auto",  //브라우저가 768보다 클 때
+        slidesPerGroup: 1,
+      }
+    },
+    centeredSlides: false,  //이녀석을 false로 바꾸면 왼쪽부터 순차적으로 슬라이드가 들어섬
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    touchRatio: 0, // 드래그 금지
+    speed : 1000,
+    autoplay: {
+      delay: 3000,
+      pauseOnMouseEnter: true,
+      disableOnInteraction: false,
+    },
+  });
+  const serachSwiper05 = new Swiper('.search_swiper05', {
+    breakpoints: {
+      768: {
+        spaceBetween : 34, // 슬라이드간 간격
+        slidesPerView: 7,  //브라우저가 768보다 클 때
+      },
+      320: {
+        spaceBetween : 20, // 슬라이드간 간격
+        slidesPerView: "auto",  //브라우저가 768보다 클 때
+        slidesPerGroup: 1,
+      }
+    },
+    centeredSlides: false,  //이녀석을 false로 바꾸면 왼쪽부터 순차적으로 슬라이드가 들어섬
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    touchRatio: 0, // 드래그 금지
+    speed : 1000,
+    autoplay: {
+      delay: 3000,
+      pauseOnMouseEnter: true,
+      disableOnInteraction: false,
+    },
+  });
+  const serachSwiper06 = new Swiper('.search_swiper06', {
+    breakpoints: {
+      768: {
+        spaceBetween : 34, // 슬라이드간 간격
+        slidesPerView: 7,  //브라우저가 768보다 클 때
+      },
+      320: {
+        spaceBetween : 20, // 슬라이드간 간격
+        slidesPerView: "auto",  //브라우저가 768보다 클 때
+        slidesPerGroup: 1,
+      }
+    },
+    centeredSlides: false,  //이녀석을 false로 바꾸면 왼쪽부터 순차적으로 슬라이드가 들어섬
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    touchRatio: 0, // 드래그 금지
+    speed : 1000,
+    autoplay: {
+      delay: 3000,
+      pauseOnMouseEnter: true,
+      disableOnInteraction: false,
+    },
+  });
+  const serachSwiper07 = new Swiper('.search_swiper07', {
+    breakpoints: {
+      768: {
+        spaceBetween : 34, // 슬라이드간 간격
+        slidesPerView: 7,  //브라우저가 768보다 클 때
+      },
+      320: {
+        spaceBetween : 20, // 슬라이드간 간격
+        slidesPerView: "auto",  //브라우저가 768보다 클 때
+        slidesPerGroup: 1,
+      }
+    },
+    centeredSlides: false,  //이녀석을 false로 바꾸면 왼쪽부터 순차적으로 슬라이드가 들어섬
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    touchRatio: 0, // 드래그 금지
+    speed : 1000,
+    autoplay: {
+      delay: 3000,
+      pauseOnMouseEnter: true,
+      disableOnInteraction: false,
+    },
+  });
+
+
+
+  // 푸터 배너
+  const swiper = new Swiper('.swiper', {
+    breakpoints: {
+      768: {
+        spaceBetween : 30, // 슬라이드간 간격
+        slidesPerView : 5, // 동시에 보여줄 슬라이드 갯수
+        loopAdditionalSlides: 1, // 슬라이드 반복 시 마지막 슬라이드에서 다음 슬라이드가 보여지지 않는 현상 수정
+        loopedSlides: 2, // 1번 로고를 1번에 보이기 위해 억지로 loopedSlides: 2를 주었기 때문에(ft_logo3 = loopedSlides:2번임.)
+      },
+      320: {
+        spaceBetween : 20, // 슬라이드간 간격
+        slidesPerView: "auto",  //브라우저가 768보다 클 때
+        slidesPerGroup: 1,
+        loopAdditionalSlides: 1,
+        loopedSlides: 2,
+      }
+    },
+    centeredSlides: true, // true 인 경우 활성 슬라이드는 항상 왼쪽이 아닌 가운데에 배치됩니다. - false가 되면 loop가 안도는 현상 발생... - 마지막 이미지 뒤로 1번 이미지가 형성이 안됨.
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    speed : 1000,
+    autoplay: {
+      delay: 5000,
+      pauseOnMouseEnter: true,
+      disableOnInteraction: false,
+    },
+  });
+
+
+
+  // swiper mouseover 시 멈추고, mouseout시 다시 재생 시작.
+  $(document).ready(function(){
+    $('.swiper-slide').on('mouseover', function(){
+      swiper.autoplay.stop();
+    });
+    $('.swiper-slide').on('mouseout', function(){
+      swiper.autoplay.start();
+    });
+  }); // document ready end
+</script>
+<!-- 하단 스크립트 -->
+    <!-- footer -->
+  </div>
+</body>
+</html>

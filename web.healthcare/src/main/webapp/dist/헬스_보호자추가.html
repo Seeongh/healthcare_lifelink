@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 파비콘 -->
+  <link rel="shortcut icon" type="image/png" href="../favicon-32x32.png">
+  <!-- 선호 URL -->
+  <link rel="canonical" href="http://ooo.test.kr">
+  <!-- 페이지 설명 -->
+  <meta name="description" content="미디어젠은...">
+
+  <!-- open graph : 소셜미디어 공유될 때 우선 활용 정보 -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="미디어젠">
+  <meta property="og:description" content="미디어젠은...">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="http://ooo.test.kr">
+
+  <!-- 스타일 -->
+  <link rel="stylesheet" href="../css/popupwindow.css" type="text/css">
+  <link rel="stylesheet" href="../css/popModal.css" type="text/css">
+  <link rel="stylesheet" href="../css/core.css" type="text/css">
+  <link rel="stylesheet" href="../css/main.css" type="text/css">
+  <link rel="stylesheet" href="../css/common.css" type="text/css">
+  <link rel="stylesheet" href="../css/sub.css" type="text/css">
+  
+  <link rel="stylesheet" href="../css/bufs_common.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css">
+  <!--  -->
+
+  <!-- 스크립트 -->
+  <script src="../js/jquery-3.1.1.min.js"></script>
+  <script src="../js/jquery-1.10.1.min.js"></script>
+  <script src="../js/jquery-ui.min.js"></script>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/common.js"></script>
+  <script src="../js/egovframework/common/common.js"></script>
+  <!--왼쪽 하위메뉴 : 공통 -->
+  <script src="../js/left_nav/navBar.js"></script>
+  <!-- 첨부파일 -->
+  <script src="../js/egovframework/com/cmm/fms/EgovMultiFile.js"></script>
+
+  <!-- 유틸 -->
+  <script src="../js/egovframework/com/cmm/utl/EgovCmmUtl.js"></script>
+  <script src="../js/wavus/comm/wavus-util.js"></script>
+  <script src="../js/biz/common/fn_egov_file.js"></script>
+
+  <script  src="../js/swiper.min.js" ></script>
+  <!-- loading bar 관련-->
+  <script src="../js/biz/common/loading.js"></script>
+  <!-- popup 관련 -->
+  <script src="../js/popModal.js"></script>
+  <script src="../js/popupwindow.js"></script>
+  <script src="../js/biz/common/popupLoad.js"></script>
+
+  <!-- video.js 예제 -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.8.1/video-js.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.8.1/video.min.js"></script>
+  <script src="../js/video.js"></script>
+
+  <title>보호자 추가</title>
+</head>
+<body>
+  <div class="layout_wrap">
+    <div class="header_layout">
+      <div class="header_wrap inner">
+        <a href="" class="main_logo">
+          <img src="../images/layout/logo.png" class="main_logo_img" alt="부산외국어센터">
+          <span>MZ Healthcare</span>
+        </a>
+  
+        <div class="login_info">
+          <span class="login_info__txt"><a href=""><strong class="login_info__user">홍길동</strong></a> 님, 안녕하세요.</span>
+          <span class="login_info_bar"></span>
+          <a href="" class="mypage_link">마이페이지</a>
+          <a href="" class="login_info__link">Login</a>
+          <a href="" class="login_info__link">Logout</a>
+        </div>
+      </div>
+    </div>
+<!-- mainHead.jsp 끝 -->
+<!-- mainleft.jsp 시작 -->
+    <div class="container">
+      <div class="container_wrap inner">
+        <section class="lnb_wrap">
+          <h1 class="lnb_title">강좌</h1>
+          <nav class="lnb">
+            <ul class="lnb_list">
+              <li class="lnb_list__item"><a href="전체강좌_리스트.html" class="lnb_list__link lnb_list__link--on">전체 강좌</a></li>
+              <li class="lnb_list__item"><a href="강좌_개설한강좌리스트.html" class="lnb_list__link">내 강좌관리</a></li>
+            </ul>
+          </nav>
+        </section>
+  
+        <section class="layout_content">
+          <h1 class="content_main_title">환자목록</h1>
+          <div class="sub_info_txt"><span class="must"></span> 는 필수 입력값입니다.</div>
+<!-- mainleft.jsp 끝 -->
+          
+          <!-- 콘텐츠 내용 -->
+          <div class="content_wrap">
+            <div class="popupwindow_container"></div>
+          <div class="jquery-modal blocker current">
+            <div class="modal" id="parModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: inline-block;">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">보호자 추가/삭제</h5>
+                  </div>
+                  <div class="modal-body">
+                    <form id="parentForm">
+                      <section class="data_table mb10">
+                        <div class="data_table__row">
+                          <div class="data_table__th must">이름</div>
+                          <div class="data_table__td">
+                            <input class="form_item_text searchMust" name="parentNm" size="20" maxlength="30" title="이름">
+                          </div>
+                        </div>
+                        <div class="data_table__row">
+                          <div class="data_table__th must">생년월일</div>
+                          <div class="data_table__td">
+                            <input class="form_item_date searchMust" type="date" id="parentBirthEnc" name="parentBirthEnc" size="50" maxlength="10" title="생년월일">
+                          </div>
+                        </div>
+                        <div class="data_table__row">
+                          <div class="data_table__th must">연락처</div>
+                          <div class="data_table__td">
+                            <input class="form_item_text searchMust" type="tel" id="parentTelNumEnc" name="parentTelNumEnc" size="20" maxlength="11">
+                          </div>
+                        </div>
+                        <div class="data_table__row">
+                          <div class="data_table__th">의사</div>
+                          <div class="data_table__td">
+
+                            <ul class="user_add_list">
+                              <li class="user_add_list__item">
+                                <a href="#none">
+                                  <strong>홍길동</strong>
+                                  <span class="user_add_list__sub">성모병원 내과</span>
+                                </a>
+                              </li>
+                              <li class="user_add_list__item">
+                                <strong>홍길동</strong>
+                                <span class="user_add_list__sub">성모병원 내과</span>
+                                <a href="#none" class="icon_form_remove"><span class="hidden">삭제</span></a>
+                              </li>
+                            </ul>
+
+                            <div class="user_add_btn">
+                              <button type="button" class="form_item_file__btn01">의사 추가/삭제</button>
+                            </div>
+
+                          </div>
+                        </div>
+                        <div class="data_table__row">
+                          <div class="data_table__th">보호자</div>
+                          <div class="data_table__td">
+                            <div class="user_add_box">
+
+                              <ul class="user_add_list">
+                                <li class="user_add_list__item"><a href="#none">홍길동</a></li>
+                                <li class="user_add_list__item">
+                                  <span>홍길동</span>
+                                  <a href="#none" class="icon_form_remove"><span class="hidden">삭제</span></a>
+                                </li>
+                              </ul>
+
+                              <div class="user_add_btn">
+                                <button type="button" class="form_item_file__btn01">보호자 추가/삭제</button>
+                              </div>
+                              
+                            </div>
+                          </div>
+                        </div>
+                        <input type="hidden" id="regGuardian">
+                        <input type="hidden" id="befGuardian">
+                      </section>
+                      <div class="button_right_group mb20">
+                        <button type="button" id="parentSearch" class="btn btn_modify">추가</button>
+                      </div>
+                    </form>
+
+                    <div id="adduser"></div>
+
+                    <div class="table_box">
+                      <table id="parentTb">
+                        <thead>
+                          <tr>
+                            <th>이름</th>
+                            <th>생일</th>
+                            <th>연락처</th>
+                            <th>삭제</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>홍길동</td>
+                            <td>1983.12.12</td>
+                            <td>010-1234-1234</td>
+                            <td>
+                              <a href="" class="icon_problem_remove"><span class="hidden">삭제</span></a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="button_right_group mt10">
+                  <button id="guardian_cancle" class="btn btn_cancel">취소</button>
+                  <a href="#close-modal" class="btn btn_save" id="guardianSave">저장</a>
+                  <a href="#close-modal" rel="modal:close" id="guardian_cancle_real" class="btn btn_cancel" hidden="hidden">취소</a>
+                </div>
+
+              </div>
+          <a href="#close-modal" rel="modal:close" class="close-modal ">Close</a></div></div>
+          </div>
+          <!-- // 콘텐츠 내용 -->
+<!-- mainbottom.jsp 시작 -->
+        </section>
+      </div>
+    </div>
+    
+    <footer>
+      -
+    </footer>
+  </div>
+</body>
+</html>

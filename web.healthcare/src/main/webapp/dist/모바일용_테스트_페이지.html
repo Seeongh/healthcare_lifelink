@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 파비콘 -->
+  <link rel="shortcut icon" type="image/png" href="/images/bufs/favi_BUFS.png">
+  <!-- 선호 URL -->
+  <link rel="canonical" href="http://ooo.test.kr">
+  <!-- 페이지 설명 -->
+  <meta name="description" content="부산외대는...">
+
+  <!-- open graph : 소셜미디어 공유될 때 우선 활용 정보 -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="부산외대">
+  <meta property="og:description" content="부산외대는...">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="http://ooo.test.kr">
+
+  <!-- 스타일 -->
+  <link rel="stylesheet" href="../css/popupwindow.css" type="text/css">
+  <link rel="stylesheet" href="../css/popModal.css" type="text/css">
+  <link rel="stylesheet" href="../css/core.css" type="text/css">
+  <link rel="stylesheet" href="../css/main.css" type="text/css">
+  <link rel="stylesheet" href="../css/common.css" type="text/css">
+  <link rel="stylesheet" href="../css/sub.css" type="text/css">
+
+  <link rel="stylesheet" href="../css/bufs_common.css" type="text/css">
+  
+
+  <!-- 스크립트 -->
+  <script src="../js/jquery-3.1.1.min.js"></script>
+  <script src="../js/jquery-1.10.1.min.js"></script>
+  <script src="../js/jquery-ui.min.js"></script>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/common.js"></script>
+  <script src="../js/egovframework/common/common.js"></script>
+  <!--왼쪽 하위메뉴 : 공통 -->
+  <script src="../js/left_nav/navBar.js"></script>
+  <!-- 첨부파일 -->
+  <script src="../js/egovframework/com/cmm/fms/EgovMultiFile.js"></script>
+
+  <!-- 유틸 -->
+  <script src="../js/egovframework/com/cmm/utl/EgovCmmUtl.js"></script>
+  <script src="../js/wavus/comm/wavus-util.js"></script>
+  <script src="../js/biz/common/fn_egov_file.js"></script>
+
+  <script src="../js/swiper.min.js"></script>
+  <!-- loading bar 관련-->
+  <script src="../js/biz/common/loading.js"></script>
+  <!-- popup 관련 -->
+  <script src="../js/popModal.js"></script>
+  <script src="../js/popupwindow.js"></script>
+  <script src="../js/biz/common/popupLoad.js"></script>
+
+  <!-- video.js 예제 -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.8.1/video-js.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.8.1/video.min.js"></script>
+  <script src="../js/video.js"></script>
+
+  <title>강좌소개</title>
+</head>
+
+<body>
+  <div class="layout_wrap">
+    <div class="header_layout">
+      <div class="header_wrap inner">
+        <a href="" class="main_logo">
+          <img src="../images/layout/logo.png" class="main_logo_img" alt="부산외국어센터">
+          <span>MZ Healthcare</span>
+        </a>
+
+        <nav class="gnb">
+          <ul class="gnb_list">
+            <li class="gnb_list__item"><a href="교수_진단평가.html" class="gnb_list__link">진단평가</a></li>
+            <li class="gnb_list__item"><a href="" class="gnb_list__link gnb_list__link--on">강좌</a></li>
+            <li class="gnb_list__item"><a href="" class="gnb_list__link">강좌현황</a></li>
+          </ul>
+        </nav>
+
+        <div class="login_info">
+          <span class="login_info__txt"><strong class="login_info__user">홍길동</strong> 님, 안녕하세요.</span>
+          <span class="login_info_bar"></span>
+          <a href="" class="mypage_link">마이페이지</a>
+          <a href="" class="login_info__link">Login</a>
+          <a href="" class="login_info__link">Logout</a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- 모바일 gnb start -->
+    <!-- header_layout의 형제로 넣어야함 -->
+    <div class="m_header_layout">
+      <div class="header_wrap inner">
+        <a href="" class="main_logo">
+          <img src="../images/layout/logo.png" class="main_logo_img" alt="부산외국어센터">
+          <span>MZ Healthcare</span>
+        </a>
+        <a href="javascript:void(0);" class="m_menu_btn">
+          <img src="../images/bufs/m_menuBtn.png" class="mobile_menu_img" alt="부산외대모바일버튼">
+        </a>
+
+        <!-- m_gnb--on을 넣으면 오픈 -->
+        <nav class="m_gnb">
+          <!-- 모바일 로그인/로그아웃 -->
+          <div class="m_login_info">
+            <span class="login_info__txt"><a href="#none" class="login_info__user">홍길동 교수님</a>, 안녕하세요.</span>
+            <!-- <a href="" class="login_info__link">Login</a> -->
+            <a href="" class="login_info__link">Logout</a>
+          </div>
+
+
+          <!-- 모바일 메뉴 -->
+          <ul class="gnb_list">
+            <li class="gnb_list__item">
+                <a href="" class="gnb_list__link gnb_list__link--on">진단평가</a>
+                <ul class="m_gnb_list">
+                    <li class="m_gnb_list__item"><a href="" class="m_gnb_list__link m_gnb_list__link--on">진단평가 소개</a></li>
+                    <li class="m_gnb_list__item"><a href="" class="m_gnb_list__link">평가문제관리</a></li>
+                    <li class="m_gnb_list__item"><a href="" class="m_gnb_list__link">진단평가</a></li>
+                </ul>
+            </li>
+            <li class="gnb_list__item">
+                <a href="" class="gnb_list__link">강좌</a>
+                <ul class="m_gnb_list">
+                    <li class="m_gnb_list__item"><a href="" class="m_gnb_list__link">전체강좌</a></li>
+                    <li class="m_gnb_list__item"><a href="" class="m_gnb_list__link">내 강좌관리</a></li>
+                </ul>
+            </li>
+            <li class="gnb_list__item">
+                <a href="" class="gnb_list__link">강좌현황</a>
+                <ul class="m_gnb_list">
+                    <li class="m_gnb_list__item"><a href="" class="m_gnb_list__link">현황관리</a></li>
+                    <li class="m_gnb_list__item"><a href="" class="m_gnb_list__link">성적관리</a></li>
+                </ul>
+            </li>
+            <li class="gnb_list__item">
+                <a href="" class="gnb_list__link">시스템관리</a>
+                <ul class="m_gnb_list">
+                  <li class="m_gnb_list__item"><a href="" class="m_gnb_list__link">1</a></li>
+                  <li class="m_gnb_list__item"><a href="" class="m_gnb_list__link">2</a></li>
+                  <li class="m_gnb_list__item"><a href="" class="m_gnb_list__link">3</a></li>
+                  <li class="m_gnb_list__item"><a href="" class="m_gnb_list__link">4</a></li>
+                  <li class="m_gnb_list__item"><a href="" class="m_gnb_list__link">5</a></li>
+                  <li class="m_gnb_list__item"><a href="" class="m_gnb_list__link">6</a></li>
+                  <li class="m_gnb_list__item"><a href="" class="m_gnb_list__link">7</a></li>
+                </ul>
+            </li>
+          </ul>
+
+          <div class="m_gnb_btn_wrap">
+            <button class="m_gnb_btn_close">닫기</button>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- 모바일 gnb end -->
+
+
+    <div class="container">
+      <div class="container_wrap inner">
+        <section class="lnb_wrap">
+          <h1 class="lnb_title">강좌</h1>
+          <nav class="lnb">
+            <ul class="lnb_list">
+              <li class="lnb_list__item"><a href="전체강좌_리스트.html" class="lnb_list__link">전체 강좌</a></li>
+              <li class="lnb_list__item"><a href="강좌_개설한강좌리스트.html" class="lnb_list__link lnb_list__link--on">내 강좌관리</a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+
+        <section class="layout_content">
+          <h1 class="content_main_title">강좌관리</h1>
+
+
+          <section class="list_search">
+            <div class="list_search__form">
+              <div class="list_search__row">
+                <label class="list_search__label">년도</label>
+                <select class="form_item_select mw150 validchk" id="sYear" name="sYear" title="년도"><option value="2022">2022</option><option value="2023">2023</option><option value="2024">2024</option><option value="2025">2025</option><option value="2026">2026</option><option value="2027">2027</option><option value="2028">2028</option><option value="2029">2029</option><option value="2030">2030</option><option value="2031">2031</option><option value="2032">2032</option><option value="2033">2033</option><option value="2034">2034</option><option value="2035">2035</option><option value="2036">2036</option><option value="2037">2037</option><option value="2038">2038</option><option value="2039">2039</option><option value="2040">2040</option></select>
+                <select class="form_item_select mw150 validchk" id="sSemesterCd" name="sSemesterCd" title="학기"><option value="001">1학기</option><option value="002">2학기</option></select>
+                <select class="form_item_select mw150 validchk" id="sclassNoFk" name="classNoFk" title="강의"><option value="1">데이터기반영어</option><option value="2">영어어휘연습</option><option value="8">교수2</option><option value="11">영미문학의 이해</option></select>
+                <input type="hidden" id="pageIndex" name="pageIndex" value="1">
+              </div>
+            </div>
+            <div class="list_search__btn">
+              <button type="button" class="btn_list_search">검색</button>
+            </div>
+          </section>
+
+          <!-- 콘텐츠 내용 -->
+          <div class="content_wrap">
+            <section class="radius_con">
+              <h1 class="radius_con__title">비즈니스를 위한 영어 회화</h1>
+
+              <div class="tab">
+                <a href="강좌_강좌소개.html" class="tab_link tab_link--on">강좌소개</a>
+                <a href="강의등록.html" class="tab_link">강의등록</a>
+                <a href="출결관리_리스트.html" class="tab_link">출결관리</a>
+                <a href="퀴즈_리스트.html" class="tab_link">퀴즈</a>
+                <a href="시험_리스트.html" class="tab_link">시험</a>
+                <a href="공지사항_리스트.html" class="tab_link">공지사항</a>
+                <a href="질문사항_리스트.html" class="tab_link">질문사항</a>
+                <a href="설문_리스트.html" class="tab_link">설문조사</a>
+              </div>
+
+              <section class="data_table">
+                <div class="data_table__row">
+                  <div class="data_table__cell">
+                    <div class="data_table__th">강좌명</div>
+                    <div class="data_table__td">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, quod?
+                    </div>
+                  </div>
+                </div>
+                <div class="data_table__row">
+                  <div class="data_table__cell">
+                    <div class="data_table__th">강좌내용</div>
+                    <div class="data_table__td">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, sint
+                      ipsam eum eos quibusdam expedita voluptatem nesciunt quae cupiditate, totam recusandae corrupti
+                      cumque adipisci numquam asperiores saepe, iure ducimus ad.Lorem, ipsum dolor sit amet consectetur
+                      adipisicing elit. Quisquam, sint ipsam eum eos quibusdam expedita voluptatem nesciunt quae
+                      cupiditate, totam recusandae corrupti cumque adipisci numquam asperiores saepe, iure ducimus
+                      ad.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, sint ipsam eum eos
+                      quibusdam expedita voluptatem nesciunt quae cupiditate, totam recusandae corrupti cumque adipisci
+                      numquam asperiores saepe, iure ducimus ad.Lorem, ipsum dolor sit amet consectetur adipisicing
+                      elit. Quisquam, sint ipsam eum eos quibusdam expedita voluptatem nesciunt quae cupiditate, totam
+                      recusandae corrupti cumque adipisci numquam asperiores saepe, iure ducimus ad.</div>
+                  </div>
+                </div>
+                <div class="data_table__row">
+                  <div class="data_table__cell">
+                    <div class="data_table__th">강좌목표</div>
+                    <div class="data_table__td">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio debitis
+                      corrupti rerum eaque deleniti consequuntur aliquam, laudantium veritatis id dolor molestias
+                      architecto dolore dolorum incidunt sit, maxime provident ratione recusandae!</div>
+                  </div>
+                </div>
+                <div class="data_table__row">
+                  <div class="data_table__cell">
+                    <div class="data_table__th">학기</div>
+                    <div class="data_table__td">2</div>
+                  </div>
+                  <div class="data_table__cell">
+                    <div class="data_table__th">학점</div>
+                    <div class="data_table__td">2</div>
+                  </div>
+                </div>
+                <div class="data_table__row">
+                  <div class="data_table__cell">
+                    <div class="data_table__th">수강/정원</div>
+                    <div class="data_table__td">2</div>
+                  </div>
+                  <div class="data_table__cell">
+                    <div class="data_table__th">CEFR</div>
+                    <div class="data_table__td">2</div>
+                  </div>
+                </div>
+              </section>
+
+              <div class="button_right_group">
+                <a href="강좌_개설한강좌리스트.html" class="btn_list">목록</a>
+                <button type="button" class="btn_modify">수정</button>
+              </div>
+            </section>
+          </div>
+          <!-- // 콘텐츠 내용 -->
+        </section>
+      </div>
+    </div>
+
+    <!-- top btn start -->
+    <!-- container의 형제로 넣어야함. -->
+    <div class="m_top_btn_wrap">
+      <button class="m_top_btn" id="toTop">TOP</button>
+    </div>
+    <!-- top btn end -->
+
+    <footer>
+      -
+    </footer>
+  </div>
+</body>
+
+</html>
+
+<script>
+  $(document).ready(function(){
+    //scrollTop
+    $(window).scroll(function() { 
+      if ($(this).scrollTop() > 100) {
+        $('#toTop').fadeIn();
+      } else { 
+        $('#toTop').fadeOut(); 
+      } 
+    }); 
+    // 버튼 클릭시 top으로 이동
+    $("#toTop").click(function() { 
+      $('html, body').animate({ scrollTop : 0}, 400);
+    });
+  });
+</script>
