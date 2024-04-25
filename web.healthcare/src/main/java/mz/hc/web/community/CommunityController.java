@@ -39,13 +39,13 @@ public class CommunityController {
 
     @GetMapping("/listboard")
     public String boardlist(HttpServletRequest req, HttpServletResponse res, Model model, HttpSession session, @RequestParam String boardUserid) throws Exception{
-//        if(session.getAttribute("acToken") == null) {	// 토큰 값 없을때
-//            return "redirect:/user/signin";
-//        }
-//        model.addAttribute("uri", req.getRequestURI());
-//        if(session.getAttribute("acToken") == null) {
-//            return "redirect:/user/signin";
-//        }
+        if(session.getAttribute("acToken") == null) {	// 토큰 값 없을때
+            return "redirect:/user/signin";
+        }
+        model.addAttribute("uri", req.getRequestURI());
+        if(session.getAttribute("acToken") == null) {
+            return "redirect:/user/signin";
+        }
         JSONObject body = new JSONObject();
         ObjectMapper obj = new ObjectMapper();
 
@@ -67,23 +67,9 @@ public class CommunityController {
                 list.add(d);
             }
         }
-
-        log.info("ash list : " + list);
         model.addAttribute("list", list);
 
         return "/community/communitymain";
-    }
-
-    @GetMapping("/writeboard")
-    public String writeBoard(HttpServletRequest req, HttpServletResponse res, @RequestParam Map<String, Object> map, Model model, HttpSession session) {
-//        if(session.getAttribute("acToken") == null) {	// 토큰 값 없을때
-//            return "redirect:/user/signin";
-//        }
-//        model.addAttribute("uri", req.getRequestURI());
-//        model.addAttribute("url", req.getRequestURL());
-//        model.addAttribute("searchUserId", map.getOrDefault("searchUserId", session.getAttribute("userId")));
-//        model.addAttribute("userNm", map.getOrDefault("userNm", null));
-        return "/community/write";
     }
 
     /**
@@ -95,32 +81,6 @@ public class CommunityController {
      * @param session
      * @return
      */
-    @PostMapping("/article")
-    public String writeArticle(HttpServletRequest req, HttpServletResponse res, @RequestParam Map<String, Object> map, Model model, HttpSession session) {
-        log.info("ash article" + map.toString());
-        model.addAttribute("uri", req.getRequestURI());
-        model.addAttribute("url", req.getRequestURL());
-
-        JSONObject body = new JSONObject();
-        body.put("userId", session.getAttribute("userId"));
-        for(String key : map.keySet()) {
-                body.put(key, map.get(key));
-        }
-
-        String str = null;
-        try {
-            str = (String) GatewayUtils.post(new URL(uri+version+"/writeBoard"),
-                    GatewayUtils.tokenCheck(session, res),
-                    body.toString());
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return "redirect:/community/communitymain";
-    }
-
-
     @PostMapping("/inscommunity")
     @ResponseBody
     public Object inscommunity(HttpServletRequest req, HttpServletResponse res, @RequestParam Map<String, Object> map, Model model, HttpSession session) {

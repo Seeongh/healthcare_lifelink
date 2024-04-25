@@ -76,14 +76,24 @@ function setBiodata(data){
 
      if(data.resultData.sleeptarget != '600' && data.resultData.sleeptarget !=  '1000') {
         var sleeptarget =  Math.floor(data.resultData.sleeptarget / 60); //몇시간 예정인지
-        var str = "오늘 <strong class=\"_blue\">" + sleeptarget+ "시간 </strong> "
+          if(!Number.isNaN(sleeptarget)){
+             var str = "오늘 <strong class=\"_blue\">" + sleeptarget+ "시간 </strong> ";
+          }
+          else{
+            var str = "오늘 <strong class=\"_blue\">0시간 </strong> ";
+          }
        $('#sleep_target').html(str + data.resultData.sleepcomment);
      }
      else {
         $('#sleep_target').text(data.resultData.sleepcomment);
      }
      var sleep = Math.floor(data.resultData.sleep / 60)
+     if(!Number.isNaN(sleep)){
+       $('#sleep_realtime').text(sleep+'시간');
+     }
+     else{
+          $('#sleep_realtime').text('0시간');
+     }
      //var sleep =  Math.floor(data.resultData.sleep / 60); //몇시간 잤는지
-     $('#sleep_realtime').text(sleep+'시간');
 
 }

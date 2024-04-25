@@ -265,7 +265,7 @@
     var searchUserGender = '${gender}';
     var searchUserAge = '${ageAvg}';
     var searchUserNm = '${userNm }';
-    var sleepData;
+    var sleepData = 0;
 
     $(document).ready(function(){
 

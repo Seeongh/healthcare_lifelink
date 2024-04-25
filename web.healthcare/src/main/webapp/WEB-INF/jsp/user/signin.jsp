@@ -16,7 +16,7 @@
         <section class="login_box">
           <div class="login_box__header">
             <img src="../images/layout/login_logo.png" alt="">
-            <strong class="login_box__logo_txt">MZ Healthcare</strong>
+            <strong class="login_box__logo_txt">나무 Healthcare</strong>
             <span class="login_box__logo_sub">인공지능 기반 건강관리</span>
           </div>
           <div class="login_box__body">

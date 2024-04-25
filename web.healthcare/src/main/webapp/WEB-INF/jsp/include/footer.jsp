@@ -40,7 +40,9 @@
           </ul>
         </div>
         <address class="ft_addr_wrap">
-          <span>: 경기도 성남시 분당구 성남대로 331번길 8 킨스타워(정자동) 11층 1103호실 TEL:  02-6429-7109</span>
+          <span>:경기도 수원시 영통구
+                 법조로 25
+                 SK뷰레이크타워 2202~2205호 TEL:  +82 031-213-6868</span>
           <span>copyright ⓒ mediazen all rights reserved.</span>
         </address>
       </section>
