@@ -1275,17 +1275,24 @@
 
 	<!-- 해당 유저의 가장 최신 데이터 끌어오기(mainpage 건강정보/활동정보)-->
 	<select id ="realtimeBiodata" parameterType="Map" resultType="CamelMap">
+		with realtimedata as(
+			SELECT
+				*
+			FROM
+				health_data_minute
+			WHERE DATE(receive_time) = #{todayDate}
+			AND user_seq = (SELECT user_seq FROM user_mng um WHERE um.user_id = #{userId})
+			ORDER BY reg_dt DESC
+		)
 		SELECT
-				(SELECT heartrate FROM health_data_minute WHERE heartrate &lt;&gt; 0 and user_seq = (SELECT user_seq FROM user_mng um WHERE um.user_id = #{userId}) ORDER BY reg_dt DESC LIMIT 1) AS heartrate,
-				(SELECT temperature FROM health_data_minute WHERE temperature &lt;&gt; 0 and user_seq = (SELECT user_seq FROM user_mng um WHERE um.user_id = #{userId}) ORDER BY reg_dt DESC LIMIT 1) AS temperature,
-				(SELECT step FROM health_data_minute WHERE step &lt;&gt; 0 and user_seq = (SELECT user_seq FROM user_mng um WHERE um.user_id = #{userId}) ORDER BY reg_dt DESC LIMIT 1) AS step,
-				(SELECT bloodpress_max FROM health_data_minute WHERE bloodpress_max &lt;&gt; 0 and user_seq = (SELECT user_seq FROM user_mng um WHERE um.user_id = #{userId}) ORDER BY reg_dt DESC LIMIT 1) AS bloodpress_max,
-				(SELECT bloodpress_min FROM health_data_minute WHERE bloodpress_min &lt;&gt; 0 and user_seq = (SELECT user_seq FROM user_mng um WHERE um.user_id = #{userId}) ORDER BY reg_dt DESC LIMIT 1) AS bloodpress_min,
-				(SELECT stress FROM health_data_minute WHERE stress &lt;&gt; 0 and user_seq = (SELECT user_seq FROM user_mng um WHERE um.user_id = #{userId}) ORDER BY reg_dt DESC LIMIT 1) AS stress,
-				(SELECT repiratory FROM health_data_minute WHERE repiratory &lt;&gt; 0 and user_seq = (SELECT user_seq FROM user_mng um WHERE um.user_id = #{userId}) ORDER BY reg_dt DESC LIMIT 1) AS repiratory,
-				(SELECT spo2 FROM health_data_minute WHERE spo2 &lt;&gt; 0 and user_seq = (SELECT user_seq FROM user_mng um WHERE um.user_id = #{userId}) ORDER BY reg_dt DESC LIMIT 1) AS spo2
-		<!--			AND DATE_TRUNC('month', receive_time) = DATE_TRUNC('month', NOW())-->
-
+			(SELECT heartrate FROM realtimedata WHERE heartrate &lt;&gt; 0 LIMIT 1) AS heartrate,
+			(SELECT temperature FROM realtimedata WHERE temperature &lt;&gt; 0 LIMIT 1) AS temperature,
+			(SELECT step FROM realtimedata WHERE step &lt;&gt; 0 LIMIT 1) AS step,
+			(SELECT bloodpress_max FROM realtimedata WHERE bloodpress_max &lt;&gt; 0 LIMIT 1) AS bloodpress_max,
+			(SELECT bloodpress_min FROM realtimedata WHERE bloodpress_min &lt;&gt; 0 LIMIT 1) AS bloodpress_min,
+			(SELECT stress FROM realtimedata WHERE stress &lt;&gt; 0 LIMIT 1) AS stress,
+			(SELECT repiratory FROM realtimedata WHERE repiratory &lt;&gt; 0 LIMIT 1) AS repiratory,
+			(SELECT spo2 FROM realtimedata WHERE spo2 &lt;&gt; 0 LIMIT 1) AS spo2
 	</select>
 
 	<!--해당유저의 각 항목별(심박수,스텝등) 하루 시간단위 그래프, [결과] data={0,0,1,...}, lv={00,01~23}-->
