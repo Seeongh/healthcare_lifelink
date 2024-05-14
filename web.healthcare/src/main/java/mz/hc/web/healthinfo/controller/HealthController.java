@@ -37,9 +37,7 @@ public class HealthController {
      */
 	@PostMapping(path = {"/temperature","/spo2","/sleep","/heartrate","/step","/stress","/bloodpress","/repiratory" })
 	public String healthInfo(HttpServletRequest req, HttpServletResponse res, @RequestParam Map<String, Object> map, Model model, HttpSession session) {
-		if(session.getAttribute("acToken") == null) {	// 토큰 값 없을때
-			return "redirect:/user/signin";
-		};
+
 		model.addAttribute("uri", req.getRequestURI());
 		model.addAttribute("url", req.getRequestURL());
 		if(map.getOrDefault("searchUserId",null)!= null && map.getOrDefault("searchUserId",null).equals("undefined")) {	// 검색 ID 없으면 내 ID
