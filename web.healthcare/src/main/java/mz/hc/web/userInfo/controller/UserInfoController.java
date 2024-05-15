@@ -68,14 +68,9 @@ public class UserInfoController {
 	public String list(HttpServletRequest req, HttpServletResponse res, Model model, HttpSession session, UserDTO dto
 			, @RequestParam Map<String, Object> map
 			) throws Exception{
-		if(session.getAttribute("acToken") == null) {	// 토큰 값 없을때
-			return "redirect:/user/signin";
-		}
+
 		model.addAttribute("path", req.getRequestURI().replaceAll("/userInfo/", ""));
 		model.addAttribute("uri", req.getRequestURI());
-		if(session.getAttribute("acToken") == null) {
-			return "redirect:/user/signin";
-		}
 		
 		model.addAttribute("dto",dto);
 		String division = req.getRequestURI().replaceAll("/userInfo/list_", "");
@@ -132,13 +127,8 @@ public class UserInfoController {
 	@SuppressWarnings("unchecked")
 	@GetMapping("/manage_userList")
 	public String userlist(HttpServletRequest req, HttpServletResponse res, Model model, HttpSession session,  UserDTO dto) throws Exception{
-		if(session.getAttribute("acToken") == null) {	// 토큰 값 없을때
-			return "redirect:/user/signin";
-		}
+
 		model.addAttribute("uri", req.getRequestURI());
-		if(session.getAttribute("acToken") == null) {
-			return "redirect:/user/signin";
-		}
 
 		JSONObject body = new JSONObject();
 		body.put("recordCountPerPage", dto.getRecordCountPerPage());
@@ -187,13 +177,6 @@ public class UserInfoController {
 
 	@GetMapping ({"/userBoardInfo", "/analysis", "/community"})
 	public String userInfo(HttpServletRequest req, HttpServletResponse res, HttpSession session, Model model, @RequestParam(defaultValue = "") String userinfoId) throws Exception {
-		if(session.getAttribute("acToken") == null) {	// 토큰 값 없을때
-			return "redirect:/user/signin";
-		}
-		model.addAttribute("uri", req.getRequestURI());
-		if(session.getAttribute("acToken") == null) {
-			return "redirect:/user/signin";
-		}
 
 		model.addAttribute("uri", req.getRequestURI());
 		model.addAttribute("url", req.getRequestURL());
@@ -281,8 +264,6 @@ public class UserInfoController {
 				}
 			}
 
-			model.addAttribute("uri", req.getRequestURI());
-			model.addAttribute("url", req.getRequestURL());
 			model.addAttribute("searchUserId", session.getAttribute("userId"));
 			session.setAttribute("UserinfoId", userinfoId);
 
@@ -336,9 +317,7 @@ public class UserInfoController {
      */
 	@GetMapping("/mypage")
 	public String mypage(HttpServletRequest req, HttpServletResponse res, HttpSession session, Model model) throws Exception {
-		if(session.getAttribute("acToken") == null) {	// 토큰 값 없을때
-			return "redirect:/user/signin";
-		}
+
 		model.addAttribute("uri", req.getRequestURI());
 		model.addAttribute("url", req.getRequestURL());
 		JSONObject body = new JSONObject();
@@ -457,9 +436,7 @@ public class UserInfoController {
      */
 	@PostMapping("/uptUserInfo")
 	public String uptUserInfo(HttpServletRequest req, HttpServletResponse res, Model model, HttpSession session) throws Exception {
-		if(session.getAttribute("acToken") == null) {	// 토큰 값 없을때
-			return "redirect:/user/signin";
-		}
+
 		model.addAttribute("uri", req.getRequestURI());
 		model.addAttribute("url", req.getRequestURL());
 		JSONObject body = new JSONObject();
@@ -519,9 +496,7 @@ public class UserInfoController {
      */
 	@PostMapping("/uptUserInfoAct")
 	public String uptUserInfoAct(HttpServletRequest req, HttpServletResponse res, Model model, HttpSession session, @RequestParam Map<String, Object> map) {
-		if(session.getAttribute("acToken") == null) {	// 토큰 값 없을때
-			return "redirect:/user/signin";
-		}
+
 		model.addAttribute("uri", req.getRequestURI());
 		model.addAttribute("url", req.getRequestURL());
 		

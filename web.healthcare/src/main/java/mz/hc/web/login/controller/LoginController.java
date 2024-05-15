@@ -55,13 +55,7 @@ public class LoginController {
 		model.addAttribute("url", req.getRequestURL());	
 		model.addAttribute("result", model.getAttribute("result"));
 
-		if(session.getAttribute("acToken") == null) {	// 로그인 세션 없음.
-			return "/user/signin";
-		}
-		else {
-
-			return "redirect:/userInfo/userBoardInfo?userinfoId="+session.getAttribute("UserinfoId");
-		}
+		return "redirect:/userInfo/userBoardInfo?userinfoId="+session.getAttribute("UserinfoId");
 	}
 	
 	/**
@@ -73,18 +67,7 @@ public class LoginController {
 		model.addAttribute("uri", req.getRequestURI());
 		model.addAttribute("url", req.getRequestURL());
 		model.addAttribute("result", model.getAttribute("result"));
-		if(session.getAttribute("acToken") == null) {	// 로그인 세션 없음.
-			return "/user/signup";
-		}
-		else {
-			return "redirect:/";
-		}
-	}
-
-	//@RequestMapping(value = "/hello", method= RequestMethod.GET)
-	@GetMapping("/hello")
-	public String Hello(){
-		return "hello world";
+ 		return "redirect:/";
 	}
 
 	/**
