@@ -46,6 +46,12 @@ public class HealthcareController {
 	@Autowired
 	BioInfoDto bioInfoDto;
 
+	private LocalDate getToday() {
+
+		// 현재 날짜 구하기
+		return LocalDate.now();
+	}
+
 	/**
 	 * @apiNote 건강 정보 데이터 등록 API
 	 * @param map(keyName) date: 검색 기준일(end Date) 
@@ -176,21 +182,35 @@ public class HealthcareController {
 	 * @return
 	 */
 	@PostMapping("dailydata")
-	public ResponseEntity<ApiResponse>  todaySleepdata(HttpServletRequest request, @RequestBody Map<String, Object> map) {
+	public ResponseEntity<ApiResponse>  dailydata(HttpServletRequest request, @RequestBody Map<String, Object> map) {
+		map.put("todayDate", getToday() );
 		Map<String,Object> responseData =healthcareService.realtimeBiodata(map);
 		Map<String,Object> sleepData =healthcareService.todaySleepdata(map);
 		log.info("ash dailydata : " + sleepData.toString());
 
 		//목표 데이터 가져오기
 		TargetDto dto = new TargetDto();
-		dto.setCurrentStep((Integer) responseData.get("step"));
-		if((Integer) sleepData.get("sleep") > 600) {
-			dto.setTotalSleep(600);
+		if(responseData != null && !responseData.isEmpty()) {
+			log.info("ash dailydata : " + responseData.toString());
+			dto.setCurrentStep((Integer) responseData.get("step"));
+			dto.setCurrentStress((Integer)responseData.get("stress"));
 		}
 		else {
-			dto.setTotalSleep((Integer) sleepData.get("sleep"));
+			dto.setCurrentStep(0);
+			dto.setCurrentStress(0);
 		}
-		dto.setCurrentStress((Integer)responseData.get("stress"));
+
+		if(sleepData != null && !sleepData.isEmpty()) {
+			if((Integer) sleepData.get("sleep") > 600) {
+				dto.setTotalSleep(600);
+			}
+			else {
+				dto.setTotalSleep((Integer) sleepData.get("sleep"));
+			}
+		}
+		else{
+			dto.setTotalSleep(0);
+		}
 
 		Map<String,Object> targetData = healthcareService.getTarget(dto);
 
@@ -213,14 +233,25 @@ public class HealthcareController {
 	 */
 	@PostMapping("realtimeBiodata") //ash 23.11.20 - review customer info for dash
 	public ResponseEntity<ApiResponse> realtimeBiodata(HttpServletRequest request, @RequestBody Map<String,Object> map){
-
+		map.put("todayDate", getToday() );
 		Map<String,Object> responseData =healthcareService.realtimeBiodata(map);
 
 		TargetDto dto = new TargetDto();
-		dto.setCurrentStep((Integer) responseData.get("step"));
-		dto.setTotalSleep(Integer.parseInt((String) map.get("sleep")));
+		if(responseData != null && !responseData.isEmpty()) {
+			dto.setCurrentStep((Integer) responseData.get("step"));
+			dto.setCurrentStress((Integer)responseData.get("stress"));
+		}
+		else{
+			dto.setCurrentStep(0);
+			dto.setCurrentStress(0);
+		}
 
-		dto.setCurrentStress((Integer)responseData.get("stress"));
+		if(map.get("sleep") != null) {
+			dto.setTotalSleep(Integer.parseInt((String) map.get("sleep")));
+		}
+		else {
+			dto.setTotalSleep(0);
+		}
 
 		Map<String,Object> targetData = healthcareService.getTarget(dto);
 		responseData.putAll(targetData);
