@@ -40,18 +40,18 @@ public class AIResponseController {
 
         Map<String, Object> result = new HashMap<>();
         String str ="";
-        try{
-             str = (String) GatewayUtils.post(new URL(uri+version+"/chat_ai"),
-                    GatewayUtils.tokenCheck(session, res),
-                    body.toString());
-
-            result = obj.readValue(str, Map.class);
+        try {
+            str = (String) GatewayUtils.post(new URL(uri+version+"/chat_ai"),
+                   GatewayUtils.tokenCheck(session, res),
+                   body.toString());
         } catch (MalformedURLException e) {
-                e.printStackTrace();
-        } catch (Exception e) {
-        e.printStackTrace();
+            throw new RuntimeException(e);
         }
 
+        try {
+            result = obj.readValue(str, Map.class);
+        } catch (JsonProcessingException e) {
+            throw new RuntimeException(e);
         return result;
     }
 }

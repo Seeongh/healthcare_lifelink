@@ -1,5 +1,6 @@
 package mz.hc.web.util;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
@@ -8,6 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import lombok.extern.slf4j.Slf4j;
+import mz.hc.web.exception.GatewayPostException;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
@@ -53,7 +55,7 @@ public class GatewayUtils {
      * @param bodyStr = httpBody영역(type:String)
      * @return API 호출 result(type:String)
      */
-	public static Object get(URL url, String tokenKey) throws Exception{
+	public static Object get(URL url, String tokenKey) {
 	    OkHttpClient client = new OkHttpClient();
 	    client.setConnectTimeout(timeout, TimeUnit.SECONDS);
 		client.setReadTimeout(timeout, TimeUnit.SECONDS);
@@ -67,9 +69,16 @@ public class GatewayUtils {
 	      .addHeader("Authorization", "Bearer "+tokenKey)
 	      .build();
 
-	    Response response = client.newCall(request).execute();	    
-	    
-	    return response.body().string();
+		Response response = null;
+		String responseStr = "";
+		try {
+			response = client.newCall(request).execute();
+			responseStr = response.body().string();
+		} catch (IOException e) {
+			throw new GatewayPostException(e);
+		}
+
+		return responseStr;
 	}
 	
 	
@@ -82,7 +91,7 @@ public class GatewayUtils {
      * @return API 호출 result(type:String)
      */
 	@SuppressWarnings("deprecation")
-	public  static Object post(URL url, String tokenKey, String bodyStr) throws Exception{
+	public  static Object post(URL url, String tokenKey, String bodyStr) {
 		OkHttpClient client = new OkHttpClient();
 		client.setConnectTimeout(timeout, TimeUnit.SECONDS);
 		client.setReadTimeout(timeout, TimeUnit.SECONDS);
@@ -100,10 +109,16 @@ public class GatewayUtils {
 	      .addHeader("Authorization", "Bearer "+tokenKey)
 	      .build();
 
-		log.info("ash request detail " + request.toString());
-	    Response response = client.newCall(request).execute();
-	    
-	    return response.body().string();
+		Response response = null;
+		String responseStr = "";
+		try {
+			response = client.newCall(request).execute();
+			responseStr =  response.body().string();
+		} catch (IOException e) {
+			throw new GatewayPostException(e);
+		}
+
+		return responseStr;
 	}
 	
 	/**
@@ -113,7 +128,8 @@ public class GatewayUtils {
      * @return API 호출 result(type:String) 
      */
 	@SuppressWarnings("deprecation")
-	public static Object post(URL url, String bodyStr) throws Exception{
+	public static Object post(URL url, String bodyStr){
+
 		OkHttpClient client = new OkHttpClient();
 		client.setConnectTimeout(timeout, TimeUnit.SECONDS);
 		client.setReadTimeout(timeout, TimeUnit.SECONDS);
@@ -129,10 +145,18 @@ public class GatewayUtils {
 	      .addHeader("accept", "application/json")
 	      .addHeader("content-type", "application/json")
 	      .build();
-	    
-	    Response response = client.newCall(request).execute();
-	    
-	    return response.body().string();
+
+		Response response = null;
+		String responseStr = "";
+
+		try{
+			response = client.newCall(request).execute();
+			responseStr =  response.body().string();
+		} catch (IOException e) {
+			throw new GatewayPostException(e);
+		}
+
+		return responseStr ;
 	}
 	
 	/**
@@ -142,7 +166,7 @@ public class GatewayUtils {
      * @return AccessToken(type:String)
      */
 	@SuppressWarnings("deprecation")
-	public static String tokenCheck(HttpSession session , HttpServletResponse res) throws Exception {
+	public static String tokenCheck(HttpSession session , HttpServletResponse res) {
 		String acToken = (String) session.getAttribute("acToken");
 		String rfToken = (String) session.getAttribute("rfToken");
 		
@@ -177,20 +201,25 @@ public class GatewayUtils {
 			      .addHeader("refreshToken", "Bearer "+rfToken)
 			      .build();
 
-			    Response response = client.newCall(request).execute();
-			    
-			    JSONObject result = new JSONObject(response.body().string());
+				Response response = null;
+				JSONObject result = null;
+				try {
+					response = client.newCall(request).execute();
+					result = new JSONObject(response.body().string());
 
-			    if(!result.isNull("resultData") && !result.isEmpty()) {
-			    	result = (JSONObject) result.get("resultData");
+					if(!result.isNull("resultData") && !result.isEmpty()) {
+						result = (JSONObject) result.get("resultData");
 
-			    	if(!result.isNull("refreshToken") && !result.isEmpty()) {
-			    			rfToken = (String) result.get("refreshToken");
-				    		acToken = (String) result.get("accessToken");
-				    		session.setAttribute("acToken", acToken);
+						if(!result.isNull("refreshToken") && !result.isEmpty()) {
+							rfToken = (String) result.get("refreshToken");
+							acToken = (String) result.get("accessToken");
+							session.setAttribute("acToken", acToken);
 							session.setAttribute("rfToken", rfToken);
-			    	}
-			    }
+						}
+					}
+				} catch (IOException e) {
+					throw new GatewayPostException(e);
+				}
 			}
 		}
 		return acToken;
