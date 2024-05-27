@@ -4,6 +4,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import mz.hc.web.exception.ResponseException;
 import mz.hc.web.util.GatewayUtils;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -40,18 +41,16 @@ public class AIResponseController {
 
         Map<String, Object> result = new HashMap<>();
         String str ="";
-        try {
-            str = (String) GatewayUtils.post(new URL(uri+version+"/chat_ai"),
-                   GatewayUtils.tokenCheck(session, res),
-                   body.toString());
-        } catch (MalformedURLException e) {
-            throw new RuntimeException(e);
+        try{
+             str = (String) GatewayUtils.post(new URL(uri+version+"/chat_ai"),
+                    GatewayUtils.tokenCheck(session, res),
+                    body.toString());
+
+            result = obj.readValue(str, Map.class);
+        } catch (MalformedURLException | JsonProcessingException e) {
+            throw new ResponseException(e);
         }
 
-        try {
-            result = obj.readValue(str, Map.class);
-        } catch (JsonProcessingException e) {
-            throw new RuntimeException(e);
         return result;
     }
 }
